@@ -11,38 +11,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bungee+Inline&family=Mouse+Memoirs&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bungee+Inline&family=Courgette&family=Mouse+Memoirs&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="../resources/favicon.png">
+    <link rel="shortcut icon" href="../resources/favicon.ico">
     <link rel="stylesheet" href="../css/style.css">
     <title>Ábalos - Contacto</title>
 </head>
 
 <body>
-    <!-- Empieza Header -->
-    <header>
-        <div class="header__watermark">
-            <a href="../index.html"><img class="header__logo" src="../resources/logo.jpg" alt="AbalosLogo" /></a>
-            <div class="header__name">
-                <h1 class="header__title">Ábalos</h1>
-                <h2 class="header__subtitle">Casa de Cervezas</h2>
+    <div class="gridContainer">
+        <!-- Empieza Header -->
+        <header>
+            <div class="header__watermark">
+                <a href="../index.html"><img class="header__logo" src="../resources/logo.png" alt="AbalosLogo" /></a>
+                <div class="header__name">
+                    <h1 class="header__title">Ábalos</h1>
+                    <h2 class="header__subtitle">Casa de Cervezas</h2>
+                </div>
             </div>
-        </div>
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="header__li"><a class="header__link" href="../index.html">Inicio</a></li>
-                <li class="header__li"><a class="header__link" href="quienesSomos.html">Quienes Somos</a></li>
-                <li class="header__li"><a class="header__link" href="sabores.html">Sabores</a></li>
-                <li class="header__li"><a class="header__link" href="membresia.html">Club de Membresía</a></li>
-                <li class="header__li"><a class="header__link" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Empieza Main -->
-    <main>
-        <h2 class="title">Envianos tu Comentario</h2>
-        <section class="contacto">
-            <div class="contacto__comentario">
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li"><a class="header__link" href="../index.html">Inicio</a></li>
+                    <li class="header__li"><a class="header__link" href="quienesSomos.html">Quienes Somos</a></li>
+                    <li class="header__li"><a class="header__link" href="sabores.html">Sabores</a></li>
+                    <li class="header__li"><a class="header__link" href="membresia.html">Club de Membresía</a></li>
+                    <li class="header__li"><a class="header__link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Empieza Main -->
+        <main>
+            <div class="title__container">
+                <h2 class="title">Envianos tu Comentario</h2>
+            </div>
+            <section class="contacto">
                 <form class="contacto__form">
                     <div class="contacto__label">
                         <label for="nombre">Nombre:</label>
@@ -58,34 +60,42 @@
                         <label for="comentario">Danos tu Comentario:</label>
                         <textarea type="textarea" placeholder="Comentario Aquí" name="comentario"></textarea>
                     </div>
-                    <div>
+                    <div class="contacto__btn">
                         <input class="btn btn-success" type="submit" value="Enviar Comentario" name=""></input>
                         <input class="btn btn-success" type="reset" value="Limpiar Comentario" name=""></input>
                         <input class="btn btn-success" type="button" value="Nada Por Ahora" name=""></input>
                     </div>
                 </form>
+            </section>
+            <div class="title__container">
+                <h2 class="title">¿Dónde Encontrarnos?</h2>
             </div>
-        </section>
-        <h2 class="title">¿Dónde Encontrarnos?</h2>
-        <section class="contacto__map">
-            <iframe class="comentario__map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.702092980053!2d-56.14690948427236!3d-34.888826380386654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81266e4ed631%3A0xd2562e7ea8f140c9!2s%C4%80BALOS%20-%20casa%20de%20cervezas%20-!5e0!3m2!1ses-419!2suy!4v1650133675492!5m2!1ses-419!2suy"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
-    <!-- Empieza Footer -->
-    <footer>
-        <div class="footer">
+            <section class="contacto__map">
+                <iframe class="comentario__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.702092980053!2d-56.14690948427236!3d-34.888826380386654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81266e4ed631%3A0xd2562e7ea8f140c9!2s%C4%80BALOS%20-%20casa%20de%20cervezas%20-!5e0!3m2!1ses-419!2suy!4v1650133675492!5m2!1ses-419!2suy"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+        <!-- Empieza Footer -->
+        <footer>
+            <div class="footer__name">
+                <a class="footer__a" href="../index.html">
+                    <h2 class="footer__title">Ábalos</h2>
+                </a>
+                <h2 class="footer__subtitle">Casa de Cervezas</h2>
+            </div>
             <span class="footer__span">Beber con moderación. Prohibida su venta a menores de 18 años. Todos los Derechos
                 reservados.</span>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-google"></a>
-            <a href="#" class="fa fa-yahoo"></a>
-        </div>
-    </footer>
+            <div class="footer__redes">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-yahoo"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

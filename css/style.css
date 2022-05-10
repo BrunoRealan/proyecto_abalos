@@ -7,34 +7,60 @@ body {
     background: linear-gradient(90deg, rgba(20, 60, 20, 1) 0%, rgba(40, 100, 40, 1) 50%, rgba(20, 60, 20, 1) 100%);
 }
 
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "header header header"
+                        "main main main"
+                        "footer footer footer";
+    gap: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    grid-area: header;
+    border-top: 5px solid rgb(15, 37, 37);
+    border-bottom: 5px solid rgb(15, 37, 37);
+    background-image: linear-gradient(to bottom, #0f2121, #0f3c3c, #0f2121);
+    height: 7.3em;
+    z-index: 1;
+}
+
 .header__logo {
     margin: 9px;
-    width: 93px;
+    width: 6em;
     height: auto;
 }
 
 .header__title {
     font-family: 'Bungee Inline', cursive;
-    font-size: xx-large;
+    font-size: 1.9em;
     padding: 4px;
     margin: 3px;
-    margin-top: 10%;
+    text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
     color: rgb(227, 174, 108);
 }
 
 .header__subtitle {
-    font-size: x-large;
+    font-size: 1.4em;
     font-family: 'Amatic SC', cursive;
-    margin-left: 3px;
-    margin-right: 3px;
     padding: 3px;
-    text-align: center;
-    color: rgb(148, 107, 26)
+    text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
+    color:rgb(220, 160, 100);
 }
 
 .header__name {
-    padding: 4px;
-    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    margin: 3px;
 }
 
 .header__watermark {
@@ -48,8 +74,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1%;
-    margin: 1%;
+    padding: 6px;
+    margin: 6px;
     width: 65vw;
 }
 
@@ -60,28 +86,29 @@ body {
     justify-content: end;
     margin: 3%;
     padding: 3%;
-    gap: 6%;
-    width: 65vw;
+    gap: 4%;
+    width: 60vw;
 }
 
 .header__li {
     margin: 3px;
     padding: 3px;
     font-family: 'Amatic SC', cursive;
-    font-size: 1.75em;
-    font-weight: bold;
+    font-size: 1.6em;
     list-style-type: none;
     text-align: center;
+
 }
 
 .header__link:link {
-    color: rgb(45, 126, 79);
+    color: rgb(60, 148, 97);
     background-color: transparent;
     text-decoration: none;
+    text-shadow: 1px 1px 1px black, 0 0 20px rgb(111, 207, 202), 00 0 15px rgb(76, 165, 138);
 }
 
 .header__link:visited {
-    color: rgb(88, 146, 88);
+    color: rgb(62, 160, 103);
     background-color: transparent;
     text-decoration: none;
 }
@@ -98,31 +125,55 @@ body {
     text-decoration: none;
 }
 
-header {
+main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: sticky;
-    top: 0px;
-    border-top: 5px solid rgb(15, 37, 37);
-    border-bottom: 5px solid rgb(15, 37, 37);
-    background-image: linear-gradient(to bottom, #0f2b2b, #0f3c3c, #0f2b2b);
-    height: 112px;
-    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    grid-area: main;
 }
 
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+footer {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-areas: "nombre span redes";
     align-items: center;
-    margin: 0%;
+    justify-content: center;
+    grid-area: footer;
     padding: 10px;
     border-top: 5px solid rgb(15, 43, 43);
     border-bottom: 5px solid rgb(15, 43, 43);
     background: rgb(14, 40, 40);
     background: linear-gradient(180deg, rgba(14, 40, 40, 1) 0%, rgba(15, 58, 58, 1) 50%, rgba(14, 40, 40, 1) 100%);
+}
+
+.footer__title {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1.8em;
+    padding: 3px;
+    color: rgb(227, 174, 108);
+    text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
+}
+
+.footer__a:hover {
+    text-decoration: none;
+    color: rgb(227, 174, 108);
+}
+
+.footer__subtitle {
+    font-size: 1.2em;
+    font-family: 'Amatic SC', cursive;
+    color: rgb(220, 160, 100);
+    text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
+}
+
+.footer__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    grid-area: nombre;
+    padding: 2px;
+    margin: 2px;
 }
 
 .fa-facebook {
@@ -151,18 +202,37 @@ header {
 }
 
 .fa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    font-size: 16px;
-    width: 50px;
+    font-size: 1em;
+    width: 2em;
+    height: 2em;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
 }
 
+.footer__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    grid-area: redes;
+}
+
 .footer__span {
-    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    grid-area: span;
+    font-size: 1.4em;
     font-family: 'Mouse Memoirs', sans-serif;
-    margin-right: 10px;
+    text-align: center;
+    margin: 14px;
     color: rgb(50, 146, 50);
 }
 
@@ -181,22 +251,22 @@ header {
 }
 
 .p {
-    font-family: 'Amatic SC', cursive;
-    font-size: x-large;
+    font-family: 'Courgette', cursive;
+    font-size: 1em;
     padding: 1%;
-    margin: 1%;
+    margin: 16px;
     text-align: center;
     list-style-type: none;
-    color: rgb(227, 174, 108)
+    color: rgb(218, 155, 78);
+    text-shadow: 1px 1px 1px black, 0 0 6px rgb(223, 190, 125), 00 0 3px rgba(199, 151, 56, 0.75);
 }
 
 .cards__divDescription {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33%;
+    width: 33vw;
     height: auto;
-    margin-left: 3%;
 }
 
 .cards__title {
@@ -211,14 +281,14 @@ header {
 }
 
 .cards__video {
-    width: 946px;
-    height: 536px;
+    width: 43vw;
+    height: 40vh;
     margin: 1%;
     padding: 5px;
 }
 
 .cards__img {
-    width: 30em;
+    width: 23vw;
     height: auto;
     margin: 12px;
     padding: 5px;
@@ -226,14 +296,16 @@ header {
 
 .cards__description {
     font-family: 'Mouse Memoirs', sans-serif;
-    font-size: x-large;
+    font-size: 1.2em;
     text-align: justify;
     padding: 15px;
     margin: 16px;
     border-radius: 35px;
-    color: rgb(15, 43, 43);
-    background-color: rgb(194, 235, 194, 0.5);
-
+    border-style: groove;
+    box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.9);
+    border-color: rgb(15, 58, 58);
+    background: rgba(125,190,125,1);
+    background: linear-gradient(135deg, rgba(50,125,60,0.9) 0%, rgba(125,190,125,1) 50%, rgba(50,125,60,0.9) 100%);
 }
 
 .cards__one {
@@ -246,7 +318,7 @@ header {
     border-style: groove;
     border-color: rgb(15, 58, 58);
     border-radius: 35px;
-    margin: 2em;
+    margin: 16px;
 }
 
 .cards__two {
@@ -259,7 +331,7 @@ header {
     border-style: groove;
     border-color: rgb(15, 58, 58);
     border-radius: 35px;
-    margin: 1em;
+    margin: 16px;
 }
 
 .cards__section {
@@ -268,34 +340,48 @@ header {
     align-items: center;
 }
 
+.btn {
+    margin:3px;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .title {
     font-family: 'Mouse Memoirs', sans-serif;
-    font-size: xx-large;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    width: 30vw;
+    height: auto;
     padding: 1%;
-    margin-left: 40%;
-    margin-right: 40%;
     margin-top: 0.8%;
     margin-bottom: 1.5%;
+    border: 2px solid rgb(15, 37, 37);
     border-radius: 35px;
-    background-color: rgb(12, 44, 46);
+    box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.9);
+    background-image: linear-gradient(to bottom, #0f2b2b, #0f3c3c, #0f2b2b);
     color: rgb(187, 134, 68)
 }
 
 .sabores__name {
     font-family: 'Mouse Memoirs', sans-serif;
-    font-size: xx-large;
+    font-size: 1.7em;
     font-weight: bold;
     text-decoration: underline;
     padding: 5px;
     margin: 5px;
+    text-shadow: 2px 2px 4px rgb(168, 118, 103);
+    text-shadow: 1px 1px 1px black, 0 0 15px rgb(223, 190, 125), 00 0 8px rgb(168, 118, 103);
     color: rgb(95, 28, 7);
 }
 
 .sabores__img {
-    width: 180px;
-    height: 400px;
+    width: 9vw;
+    height: auto;
     margin: 10px;
     padding: 0px;
     border-radius: 35px;
@@ -309,20 +395,22 @@ header {
     align-items: center;
     border-radius: 35px;
     border-style: groove;
-    border-color: rgb(0, 60, 0);
-    background-color: rgb(60, 120, 60)
+    box-shadow: 5px 5px 12px 2px rgba(0,0,0,0.9);
+    border-color: rgb(14,50,35);
+    background: rgb(15,40,33);
+    background: linear-gradient(90deg, rgba(16,55,35,1) 0%, rgba(50,95,50,1) 50%, rgba(16,55,35,1) 100%);
 }
 
 .sabores {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 16px;
-    margin: 16px;
+    gap: 4em;
+    margin: 2em;
 }
 
 .somos__img {
-    width: 47em;
+    width: 50vw;
     height: auto;
     margin: 1%;
     padding: 1%;
@@ -330,15 +418,17 @@ header {
 
 .description {
     font-family: 'Mouse Memoirs', sans-serif;
-    font-size: x-large;
-    width: 60%;
+    font-size: 1.1em;
+    width: 40vw;
     text-align: center;
     padding: 15px;
-    margin: 16px;
+    margin: 32px;
     border-radius: 35px;
     border-style: groove;
+    box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.9);
     border-color: rgb(15, 58, 58);
-    background-color: rgba(194, 240, 194, 0.40);
+    background: rgba(125,190,125,1);
+    background: linear-gradient(135deg, rgba(50,125,60,0.9) 0%, rgba(125,190,125,1) 50%, rgba(50,125,60,0.9) 100%);
     color: rgb(15, 33, 33);
 }
 
@@ -349,9 +439,16 @@ header {
     margin-bottom: 2%;
 }
 
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+}
+
 textarea {
-    width: 80%;
-    height: 200px;
+    width: 25em;
+    height: 9em;
     margin: 5px;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -364,35 +461,29 @@ textarea {
 
 label {
     font-family: 'Mouse Memoirs', sans-serif;
-    font-size: larger;
+    font-size: 1.1em;
     font-weight: bold;
     margin: 5px;
     padding: 5px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
-    background-color: rgba(14, 29, 31, 0.85);
+    background-color: rgba(14, 29, 31, 0.90);
     color: rgb(187, 134, 68)
 }
 
-.contacto__comentario {
+.contacto__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url(../resources/imgContact.jpg);
-    min-height: 650px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    margin: 16px;
 }
 
-.comentario__form {
-    margin: 20px;
-    padding: 16px;
-    min-width: 450px;
-    background-color: white;
-}
 
 .contacto__label {
     display: flex;
@@ -409,25 +500,28 @@ label {
     margin-bottom: 10px;
 }
 
-.contacto {
-    margin-bottom: 3%;
+.contacto__btn {
+    display: flex;
+    flex-direction: row;
 }
 
 .contacto__map {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 .comentario__map {
-    width: 40%;
-    height: 450px;
-    margin-bottom: 2%;
+    width: 65vw;
+    height: 20em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .membresia {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .membresia__div {
@@ -435,6 +529,7 @@ label {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 5%;
 }
 
 .membresia__div2 {
@@ -442,10 +537,423 @@ label {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    gap: 5%;
 }
 
 .membresia__img {
-    width: 35em;
+    width: 30vw;
     height: auto;
-    margin: 1.5%;
+    margin: 1%;
+}
+
+/* Tablet Mini*/
+@media (min-width:541px) and (max-width:720px) {
+    .gridContainer {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "header header"
+                            "main main"
+                            "footer footer";
+        gap: 0.3%;
+    }
+
+    header {
+        justify-content: center;
+        height: 13.3em;
+    }
+
+    .header__watermark{
+        justify-content: center;
+    }
+
+    .header__logo {
+        width: 5.5em;
+        margin: 3px;
+    }
+    .header__title {
+        font-size: 1.6em;
+        padding: 2px;
+        margin: 2px;
+    }
+    
+    .header__subtitle {
+        font-size: 1.3em;
+    }
+
+    .header__nav {
+        padding: 1%;
+        margin: 6px;
+        width: 45vw;
+    }
+    
+    .header__ul {
+        flex-direction: column;
+        margin: 8px;
+        padding: 8px;
+        width: 45vw;
+    }
+    
+    .header__li {
+        margin: 2px;
+        padding: 1px;
+        font-size: 1.3em;
+    }
+
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: (0.5fr 0.5fr 1fr);
+        grid-template-areas:"nombre" 
+                            "redes"
+                            "span";
+    }
+
+    .footer__title {
+        font-size: 1.25em;
+    }
+
+    .footer__subtitle {
+        font-size: 1.1em;
+    }
+
+    .footer__span {
+        font-size: 1.1em;
+    }
+
+    .carousel__div {
+        width: 95%;
+        height: auto;
+    }
+
+    .p {
+        font-size: 1.1em;
+        margin: 15px;
+        padding: 3px;
+    }
+
+    .cards__one {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .cards__two {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .cards__divDescription {
+        width: 88%;
+    }
+
+    .cards__title {
+        font-size: x-large;
+    }
+
+    .cards__video {
+        width: 65vw;
+        height: 23vh;
+        margin: 3px;
+        margin-top: 15px;
+        padding: 3px;
+    }
+
+    .cards__img {
+        width: 55vw;
+        margin: 12px;
+        padding: 5px;
+    }
+
+    .cards__title {
+        font-size: 1.3em;
+        padding: 3px;
+        margin: 5px;
+    }
+    
+    .cards__description {
+        font-size: 1em;
+        padding: 12px;
+        margin: 8px;
+    }
+
+    .title {
+        font-size: 1.3em;
+    }
+
+    .somos__img {
+        width: 90vw;
+    }
+
+    .description {
+        width: 90vw;
+        height: auto;
+    }
+
+    .sabores {
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px;
+        margin: 16px;
+    }
+    
+    .sabores__img {
+        width: 20vw;
+    }
+
+    .membresia__div {
+        flex-direction: column-reverse;
+
+    }
+
+    .membresia__div2 {
+        flex-direction: column-reverse;
+    }
+
+    .membresia__img {
+        width: 90vw;
+        height: auto;
+        margin: 16px;
+    }
+
+    .contacto {
+        width: 90vw;
+    }
+    
+    .contacto__form {
+        width: 90vw;
+    }
+
+    
+    label {
+        font-size: 1em;
+    }
+    
+    textarea {
+        width: 76vw;
+    }
+
+    .contacto__btn {
+        flex-direction: column;
+    }
+
+    .contacto__map {
+        width: 90vw;
+    }
+
+    .comentario__map {
+        width: 90vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Movile */
+@media (min-width:321px) and (max-width:540px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+                            "main"
+                            "footer";
+    }
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+        height: 10.5em;
+        border-top: 1px;
+        border-bottom: 1px;
+    }
+
+    .header__name {
+        margin: 3px;
+    }
+    .header__logo {
+        width: 4em;
+        margin: 2px;
+    }
+
+    .header__title {
+        font-size: 1.4em;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .header__subtitle {
+        font-size: 1.1em;
+    }
+    
+    .header__nav {
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+    }
+    
+    .header__ul {
+        flex-direction: row;
+        justify-content: center;
+        margin: 1px;
+        padding: 1px;
+        width: 90vw;
+        gap: 5%;
+    }
+    
+    .header__li {
+        margin: 2px;
+        padding: 1px;
+        font-size: 1.2em;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: (0.5fr 0.5fr 1fr);
+        grid-template-areas:"nombre" 
+                            "redes"
+                            "span";
+    }
+
+    .footer__title {
+        font-size: 1.25em;
+    }
+
+    .footer__subtitle {
+        font-size: 1.1em;
+    }
+
+    .footer__span {
+        font-size: 1.1em;
+    }
+
+    .carousel__div {
+        width: 96%;
+        height: auto;
+    }
+
+    .p {
+        font-size: 1em;
+        margin: 15px;
+        padding: 3px;
+    }
+
+    .cards__one {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .cards__two {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .cards__divDescription {
+        width: 88%;
+    }
+
+    .cards__title {
+        font-size: x-large;
+    }
+
+    .cards__video {
+        width: 80vw;
+        height: 23vh;
+        margin: 3px;
+        margin-top: 15px;
+        padding: 3px;
+    }
+
+    .cards__img {
+        width: 70vw;
+        margin: 12px;
+        padding: 5px;
+    }
+
+    .cards__title {
+        font-size: 1.3em;
+        padding: 3px;
+        margin: 5px;
+    }
+    
+    .cards__description {
+        font-size: 1em;
+        padding: 12px;
+        margin: 8px;
+    }
+
+    .title {
+        font-size: 1.3em;
+    }
+
+    .somos__img {
+        width: 90vw;
+    }
+
+    .description {
+        width: 83.5vw;
+        height: auto;
+    }
+
+    .sabores {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin: 16px;
+    }
+    
+    .sabores__img {
+        width: 35vw;
+    }
+
+    .membresia__div {
+        flex-direction: column-reverse;
+        gap:0.5%;
+    }
+
+    .membresia__div2 {
+        flex-direction: column-reverse;
+        gap: 0.5%;
+    }
+
+    .membresia__img {
+        width: 90vw;
+        height: auto;
+        margin: 16px;
+    }
+
+    .contacto {
+        width: 90vw;
+    }
+    
+    .contacto__form {
+        width: 90vw;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    textarea {
+        width: 76vw;
+    }
+
+    .contacto__btn {
+        flex-direction: column;
+    }
+
+    .contacto__map {
+        width: 90vw;
+    }
+
+    .comentario__map {
+        width: 90vw;
+    }
 }
