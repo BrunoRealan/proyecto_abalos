@@ -37,6 +37,11 @@ header {
     height: auto;
 }
 
+.header__logo:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
 .header__title {
     font-family: 'Bungee Inline', cursive;
     font-size: 1.9em;
@@ -97,7 +102,11 @@ header {
     font-size: 1.6em;
     list-style-type: none;
     text-align: center;
+}
 
+.header__li:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
 }
 
 .header__link:link {
@@ -117,6 +126,7 @@ header {
     color: rgb(96, 165, 39);
     background-color: transparent;
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 .header__link:active {
@@ -157,6 +167,8 @@ footer {
 .footer__a:hover {
     text-decoration: none;
     color: rgb(227, 174, 108);
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 .footer__subtitle {
@@ -344,6 +356,11 @@ footer {
     margin:3px;
 }
 
+.btn:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
 .title__container {
     display: flex;
     flex-direction: row;
@@ -389,6 +406,11 @@ footer {
     border-color: rgb(88, 43, 13);
 }
 
+.sabores__img:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
 .sabores__div {
     display: flex;
     flex-direction: column;
@@ -414,6 +436,11 @@ footer {
     height: auto;
     margin: 1%;
     padding: 1%;
+}
+
+.somos__img:hover {
+    transform: scale(1.1);
+    transition: all 1s;
 }
 
 .description {
@@ -544,6 +571,11 @@ label {
     width: 30vw;
     height: auto;
     margin: 1%;
+}
+
+.membresia__img:hover {
+    transform: scale(1.1);
+    transition: all 1s;
 }
 
 /* Tablet Mini*/
