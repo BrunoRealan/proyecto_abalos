@@ -47,7 +47,7 @@ header {
     font-size: 1.9em;
     padding: 4px;
     margin: 3px;
-    text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
+    text-shadow: 1px 1px 1px black, 0 0 4px rgb(223, 190, 125), 0 0 2px rgba(199, 151, 56, 0.75);
     color: rgb(227, 174, 108);
 }
 
@@ -113,7 +113,7 @@ header {
     color: rgb(60, 148, 97);
     background-color: transparent;
     text-decoration: none;
-    text-shadow: 1px 1px 1px black, 0 0 20px rgb(111, 207, 202), 00 0 15px rgb(76, 165, 138);
+    text-shadow: 1.5px 1px 1px black, 0 0 10px rgb(111, 207, 202), 00 0 5px rgb(76, 165, 138);
 }
 
 .header__link:visited {
@@ -161,14 +161,17 @@ footer {
     font-size: 1.8em;
     padding: 3px;
     color: rgb(227, 174, 108);
-    text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
+    text-shadow: 1px 1px 1px black, 0 0 4px rgb(223, 190, 125), 0 0 2px rgba(199, 151, 56, 0.75);
 }
 
 .footer__a:hover {
-    text-decoration: none;
     color: rgb(227, 174, 108);
     transform: scale(1.1);
     transition: all 0.5s;
+}
+
+.footer__a:link {
+    text-decoration: none;
 }
 
 .footer__subtitle {
@@ -264,13 +267,17 @@ footer {
 
 .p {
     font-family: 'Courgette', cursive;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 1%;
-    margin: 16px;
+    margin: 10px;
     text-align: center;
     list-style-type: none;
-    color: rgb(218, 155, 78);
-    text-shadow: 1px 1px 1px black, 0 0 6px rgb(223, 190, 125), 00 0 3px rgba(199, 151, 56, 0.75);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black, 0 0 4px rgb(129, 99, 39), 0 0 2px rgb(70, 55, 25);
+}
+
+.p__title {
+    font-size:1.5em;
 }
 
 .cards__divDescription {
@@ -409,6 +416,21 @@ footer {
 .sabores__img:hover {
     transform: scale(1.2);
     transition: all 1s;
+}
+
+.sabores__p {
+    font-family: 'Courgette', cursive;
+    font-size: 1.1em;
+    padding: 1%;
+    margin: 10px;
+    text-align: center;
+    list-style-type: none;
+    color: rgb(184, 155, 98);
+    text-shadow: 1px 1px 1px black, 0 0 4px rgb(116, 83, 17), 0 0 2px rgb(80, 57, 11);
+}
+
+li {
+    list-style-type: none;
 }
 
 .sabores__div {
@@ -874,7 +896,7 @@ label {
 
     .p {
         font-size: 1em;
-        margin: 15px;
+        margin: 10px;
         padding: 3px;
     }
 
