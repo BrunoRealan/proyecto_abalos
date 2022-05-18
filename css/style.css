@@ -851,7 +851,7 @@ label {
     }
 
     .nav-item {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0;
         padding: 0;
     }
@@ -859,9 +859,9 @@ label {
     footer {
         grid-template-columns: 1fr;
         grid-template-rows: (0.5fr 0.5fr 1fr);
-        grid-template-areas:"nombre"
-                            "redes"
-                            "span";
+        grid-template-areas: "nombre"
+            "redes"
+            "span";
     }
 
     .footer__title {
@@ -1006,4 +1006,3 @@ label {
         width: 90vw;
     }
 }
-
