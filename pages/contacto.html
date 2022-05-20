@@ -27,7 +27,7 @@
                     <div class="container-fluid">
                         <a class="navbar-brand header__watermark" href="../index.html">
                             <img class="header__logo" src="../resources/logo.png" alt="AbalosLogo.">
-                            <div class="header__name">
+                            <div class="header__name columnaCentrada">
                                 <h1 class="header__title">Ábalos</h1>
                                 <h2 class="header__subtitle">Casa de Cervezas</h2>
                             </div>
@@ -63,13 +63,22 @@
             </div>
         </header>
         <!-- Empieza Main -->
-        <main>
-            <div class="title__container">
+        <main class="columnaCentrada">
+            <div class="title__container filaCentrada">
+                <h2 class="title">¿Dónde Encontrarnos?</h2>
+            </div>
+            <section class="contacto__map columnaCentrada">
+                <iframe class="contacto__map "
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.702092980053!2d-56.14690948427236!3d-34.888826380386654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81266e4ed631%3A0xd2562e7ea8f140c9!2s%C4%80BALOS%20-%20casa%20de%20cervezas%20-!5e0!3m2!1ses-419!2suy!4v1650133675492!5m2!1ses-419!2suy"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <div class="title__container filaCentrada">
                 <h2 class="title">Envianos tu Comentario</h2>
             </div>
-            <section class="contacto">
-                <form class="contacto__form">
-                    <div class="contacto__label">
+            <section class="contacto columnaCentrada">
+                <form class="contacto__form columnaCentrada">
+                    <div class="contacto__label columnaCentrada">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="name" placeholder="Nombre" name="nombre">
 
@@ -79,46 +88,32 @@
                         <label for="e-mail">E-Mail:</label>
                         <input type="text" id="email" placeholder="E-Mail" name="e-mail">
                     </div>
-                    <div class="contacto__text">
+                    <div class="contacto__text columnaCentrada">
                         <label for="comentario">Danos tu Comentario:</label>
                         <textarea type="textarea" placeholder="Comentario Aquí" name="comentario"></textarea>
                     </div>
-                    <div class="contacto__btn">
+                    <div class="filaCentrada">
                         <input class="btn btn-success" type="submit" value="Enviar Comentario" name=""></input>
                         <input class="btn btn-success" type="reset" value="Limpiar Comentario" name=""></input>
                         <input class="btn btn-success" type="button" value="Nada Por Ahora" name=""></input>
                     </div>
                 </form>
             </section>
-            <div class="title__container">
-                <h2 class="title">¿Dónde Encontrarnos?</h2>
-            </div>
-            <section class="contacto__map">
-                <iframe class="contacto__map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.702092980053!2d-56.14690948427236!3d-34.888826380386654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81266e4ed631%3A0xd2562e7ea8f140c9!2s%C4%80BALOS%20-%20casa%20de%20cervezas%20-!5e0!3m2!1ses-419!2suy!4v1650133675492!5m2!1ses-419!2suy"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
         </main>
         <!-- Empieza Footer -->
         <footer>
-            <div class="footer__name">
+            <div class="footer__name columnaCentrada">
                 <a class="footer__a" href="../index.html">
                     <h2 class="footer__title">Ábalos</h2>
                 </a>
                 <h2 class="footer__subtitle">Casa de Cervezas</h2>
             </div>
-            <span class="footer__span">Beber con moderación. Prohibida su venta a menores de 18 años. Todos los Derechos
-                reservados.</span>
-            <div class="footer__redes">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-yahoo"></a>
+            <span class="footer__span columnaCentrada">Beber con moderación. Prohibida su venta a menores de 18 años.
+                Todos los Derechos reservados.</span>
+            <div class="footer__redes row">
+                <a href="https://www.instagram.com/abaloscasadecervezas/" class="fa fa-instagram filaCentrada"></a>
             </div>
         </footer>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>

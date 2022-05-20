@@ -3,6 +3,22 @@
     padding: 0;
 }
 
+.columnaCentrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filaCentrada {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reversa {
+    flex-direction: row-reverse;
+}
+
 body {
     background: linear-gradient(90deg, rgba(18, 45, 20, 1) 0%, rgba(40, 100, 40, 1) 50%, rgba(18, 45, 20, 1) 100%);
 }
@@ -42,8 +58,6 @@ header {
     font-size: 1.9rem;
     padding: 0.35rem;
     padding-bottom: 0;
-    margin: 0.35rem;
-    margin-bottom: 0;
     text-shadow: 1px 1px 1px black, 0 0 4px rgb(223, 190, 125), 0 0 2px rgba(199, 151, 56, 0.75);
     color: rgb(227, 174, 108);
 }
@@ -58,9 +72,6 @@ header {
 }
 
 .header__name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     padding: 0.125rem;
     margin: 0.125rem;
@@ -108,9 +119,6 @@ header {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     grid-area: main;
 }
 
@@ -121,9 +129,9 @@ footer {
     align-items: center;
     justify-content: center;
     grid-area: footer;
-    padding: 0.8rem;
-    border-top: 4px solid rgb(15, 43, 43);
-    border-bottom: 4px solid rgb(15, 43, 43);
+    padding: 2rem;
+    border-top: 4px solid rgb(13, 37, 38);
+    border-bottom: 4px solid rgb(14, 37, 38);
     background: rgb(14, 40, 40);
     background: linear-gradient(180deg, rgba(14, 40, 40, 1) 0%, rgba(15, 58, 58, 1) 50%, rgba(14, 40, 40, 1) 100%);
 }
@@ -156,68 +164,43 @@ footer {
 }
 
 .footer__name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
     grid-area: nombre;
-    padding: 0.125rem;
-    margin: 0.125rem;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
-
-.fa-yahoo {
-    background: #430297;
-    color: white;
+    justify-self: center;
 }
 
 .fa {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    font-size: 1rem;
-    width: 2rem;
-    height: 2rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
     text-align: center;
     text-decoration: none;
     margin: 0.3rem 0.25rem;
 }
 
+.fa:hover {
+    color: rgb(10, 20, 20);
+    opacity: 0.6;
+}
+
+.fa-instagram {
+    background: rgb(81,91,212);
+    background: linear-gradient(135deg, rgba(81,91,212,1) 0%, rgba(129,52,175,1) 50%, rgb(172, 39, 99) 100%);
+    color:rgb(13, 51, 13);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
 .footer__redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
     grid-area: redes;
+    justify-content: center;
+    margin: 0;
 }
 
 .footer__span {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     grid-area: span;
+    justify-content: center;
     font-size: 1.4rem;
     font-family: 'Mouse Memoirs', sans-serif;
     text-align: center;
@@ -226,18 +209,11 @@ footer {
     color: rgb(44, 121, 44);
 }
 
-.carousel__div {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+.carousel {
+    margin: 0 0.5rem;
     padding: 0.5rem;
     width: 90vw;
     height: auto;
-}
-
-.carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .p {
@@ -248,7 +224,7 @@ footer {
     text-align: center;
     list-style-type: none;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px black, 0 0 3px rgb(75, 58, 23), 0 0 2px rgb(48, 38, 20)
+    text-shadow: 3px 3px 2px rgb(0, 0, 0), 0 0 5px rgb(43, 34, 18), 0 0 2px rgb(20, 17, 12);
 }
 
 .p__title {
@@ -256,9 +232,6 @@ footer {
 }
 
 .cards__divDescription {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 33vw;
     height: auto;
 }
@@ -267,12 +240,12 @@ footer {
     font-family: 'Mouse Memoirs', sans-serif;
     font-size: 1.9rem;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
     padding: 1rem;
     margin: 0.8rem;
-    color: rgb(13, 51, 13);
-    text-shadow: 0 0 1px rgb(10, 20, 20);
+    color: rgb(16, 44, 25);
+    text-shadow: 1px 1px rgba(185, 231, 185, 1);
 }
 
 .cards__video {
@@ -304,10 +277,7 @@ footer {
     color: rgb(5, 15, 20);
 }
 
-.cards__one {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.cardsOne {
     justify-content: space-evenly;
     width: 88vw;
     border-style: groove;
@@ -319,10 +289,8 @@ footer {
     color: rgb(5, 15, 20);
 }
 
-.cards__two {
-    display: flex;
+.cardsTwo {
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-evenly;
     width: 88vw;
     border-style: groove;
@@ -333,14 +301,10 @@ footer {
     background: linear-gradient(135deg, rgba(144, 185, 144, 0.4) 0%, rgba(185, 231, 185, 0.75) 50%, rgba(144, 185, 144, 0.4) 100%);
 }
 
-.cards__section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .btn {
-    margin: 1rem;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.3rem;
+    margin: 0.6rem;
 }
 
 .btn:hover {
@@ -349,8 +313,6 @@ footer {
 }
 
 .title__container {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -362,8 +324,7 @@ footer {
     width: 30vw;
     height: auto;
     padding: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     border: 2px solid rgb(15, 37, 37);
     border-radius: 30px;
     box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.9);
@@ -420,9 +381,6 @@ li {
 }
 
 .sabores__div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-radius: 30px;
     border-style: groove;
     box-shadow: 5px 5px 12px 2px rgba(0, 0, 0, 0.9);
@@ -440,9 +398,6 @@ li {
 }
 
 .somos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 1rem;
 }
 
@@ -475,9 +430,6 @@ li {
 }
 
 .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -499,18 +451,13 @@ label {
     font-size: 1.1rem;
     font-weight: bold;
     margin: 0.5rem;
-    padding: 0.25rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+    padding: 0.25rem 0.8rem 0.25rem 0.8rem;
     border-radius: 10px;
     background-color: rgba(14, 29, 31, 0.90);
     color: rgb(187, 134, 68)
 }
 
 .contacto__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-image: url(../resources/imgContact.jpg);
     background-position: center;
@@ -521,57 +468,27 @@ label {
 
 
 .contacto__label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     margin-bottom: 1.8rem;
 }
 
 .contacto__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 0.6rem;
 }
 
-.contacto__btn {
-    display: flex;
-    flex-direction: row;
-}
-
 .contacto__map {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-
-.contacto__map {
     width: 50vw;
     height: 50vh;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0rem;
 }
 
 .membresia {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 2rem 0;
 }
 
 .membresia__div {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 5rem;
-}
-
-.membresia__div2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
     gap: 5rem;
 }
 
@@ -590,12 +507,18 @@ label {
 
 @media (min-width:721px) and (max-width:1230px) {
 
+    .fa {
+        font-size: 1.6rem;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
 
     .nav-item {
         font-size: 1.5rem;
     }
 
-    .cards__one {
+    .cardsOne {
         flex-direction: column;
     }
 
@@ -642,11 +565,8 @@ label {
     }
 
     .membresia__div {
-        flex-direction: column-reverse;
-    }
-
-    .membresia__div2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        gap: 3rem;
     }
 
     .contacto__map {
@@ -702,16 +622,25 @@ label {
     }
 
     .footer__title {
-        font-size: 1.25em;
+        font-size: 1.5em;
     }
 
     .footer__subtitle {
         font-size: 1.1em;
+        margin-bottom: 1rem;
     }
 
     .footer__span {
         font-size: 1.1em;
     }
+
+    .fa {
+        padding: 0.5rem;
+        font-size: 1.6rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
 
     .carousel__div {
         width: 95vw;
@@ -724,12 +653,12 @@ label {
         padding: 0.125rem;
     }
 
-    .cards__one {
+    .cardsOne {
         flex-direction: column;
         width: 90vw;
     }
 
-    .cards__two {
+    .cardsTwo {
         flex-direction: column;
         width: 90vw;
     }
@@ -777,7 +706,7 @@ label {
     }
 
     .description {
-        width: 90vw;
+        width: 85vw;
         height: auto;
     }
 
@@ -792,12 +721,8 @@ label {
     }
 
     .membresia__div {
-        flex-direction: column-reverse;
-
-    }
-
-    .membresia__div2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .membresia__img {
@@ -838,7 +763,11 @@ label {
 
 /* Movile */
 
-@media (min-width:321px) and (max-width:540px) {
+@media (min-width:320px) and (max-width:540px) {
+    .filaCentrada {
+        flex-direction: column;
+    }
+
     .gridContainer {
         display: grid;
         grid-template-columns: 1fr;
@@ -879,6 +808,7 @@ label {
         grid-template-areas: "nombre"
             "redes"
             "span";
+        padding: 1rem;
     }
 
     .footer__title {
@@ -887,10 +817,24 @@ label {
 
     .footer__subtitle {
         font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
 
     .footer__span {
         font-size: 1rem;
+    }
+
+    .fa {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .carousel {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        padding: 0.25rem;
     }
 
     .carousel__div {
@@ -906,14 +850,12 @@ label {
         padding: 3px;
     }
 
-    .cards__one {
-        flex-direction: column;
+    .cardsOne {
         width: 94vw;
         margin: 0.250rem;
     }
 
-    .cards__two {
-        flex-direction: column;
+    .cardsTwo {
         width: 94vw;
         margin: 0.250rem;
     }
@@ -951,7 +893,8 @@ label {
     .title {
         width: 50vw;
         font-size: 1.4rem;
-
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
     }
 
     .somos {
@@ -980,12 +923,7 @@ label {
     }
 
     .membresia__div {
-        flex-direction: column-reverse;
-        gap: 0.5rem;
-    }
-
-    .membresia__div2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 0.5rem;
     }
 
@@ -1013,6 +951,7 @@ label {
 
     .contacto__btn {
         flex-direction: column;
+        margin: 0.25rem;
     }
 
     .contacto__map {
@@ -1021,5 +960,10 @@ label {
 
     .comentario__map {
         width: 90vw;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        margin: 0.4rem;
     }
 }
