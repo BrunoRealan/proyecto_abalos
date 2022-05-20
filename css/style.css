@@ -507,16 +507,12 @@ label {
         font-size: 1.5rem;
     }
 
-    .cardsOne {
+    .cards {
         flex-direction: column;
     }
 
     .cards__video {
         width: 68vw;
-    }
-
-    .cards__two {
-        flex-direction: column;
     }
 
     .cards__img {
@@ -642,12 +638,7 @@ label {
         padding: 0.125rem;
     }
 
-    .cardsOne {
-        flex-direction: column;
-        width: 90vw;
-    }
-
-    .cardsTwo {
+    .cards {
         flex-direction: column;
         width: 90vw;
     }
@@ -839,13 +830,8 @@ label {
         padding: 3px;
     }
 
-    .cardsOne {
-        width: 94vw;
-        margin: 0.250rem;
-    }
-
-    .cardsTwo {
-        width: 94vw;
+    .cards {
+        width: 93vw;
         margin: 0.250rem;
     }
 
