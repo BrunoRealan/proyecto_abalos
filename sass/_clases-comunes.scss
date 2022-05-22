@@ -8,10 +8,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    @media (min-width:320px) and (max-width:540px) {
+        flex-direction: column;
+    }
 }
 
 .reversa {
     flex-direction: row-reverse;
+    @media (min-width:320px) and (max-width:540px) {
+        flex-direction: column;
+    }
 }
 
 .title__container {
@@ -31,7 +38,18 @@
         box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.9);
         text-shadow: 1px 1px 1px black, 0 0 5px rgb(129, 99, 39), 0 0 3px rgb(46, 36, 16);
         background-image: linear-gradient(to bottom, #0f2b2b, #0f3c3c, #0f2b2b);
-        color: rgb(187, 134, 68)
+        color: rgb(187, 134, 68);
+
+        @media (min-width:541px) and (max-width:720px) {
+            font-size: 1.6rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 50vw;
+            font-size: 1.4rem;
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem;
+        }
     }
 }
 
@@ -39,6 +57,11 @@
     font-family: 'Mouse Memoirs', sans-serif;
     font-size: 1.3rem;
     margin: 0.6rem;
+
+    @media (min-width:320px) and (max-width:540px) {
+        font-size: 1.1rem;
+        margin: 0.4rem;
+    }
 
     &:hover {
         transform: scale(1.2);
@@ -71,6 +94,16 @@ label {
     background: rgba(125, 190, 125, 1);
     background: linear-gradient(135deg, rgba(50, 125, 60, 0.9) 0%, rgba(125, 190, 125, 1) 50%, rgba(50, 125, 60, 0.9) 100%);
     color: rgb(10, 20, 20);
+
+    @media (min-width:721px) and (max-width:1230px) {
+        width: 80vw;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        font-size: 1.1rem;
+        width: 83.5vw;
+        height: auto;
+    }
 }
 
 .p {
@@ -82,6 +115,19 @@ label {
     list-style-type: none;
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 2px rgb(0, 0, 0), 0 0 5px rgb(43, 34, 18), 0 0 2px rgb(20, 17, 12);
+
+    @media (min-width:541px) and (max-width:720px) {
+        font-size: 1.1rem;
+        margin: 1rem;
+        padding: 0.125rem;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 3px;
+    }
+
     &__title {
         font-size: 1.5rem;
     }

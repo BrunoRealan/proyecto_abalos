@@ -2,7 +2,6 @@
 @import 'clases-comunes';
 @import 'header';
 @import 'footer';
-@import 'mediaqueries';
 
 * {
     margin: 0;
@@ -20,6 +19,23 @@ body {
         "main main main"
         "footer footer footer";
     gap: 1rem;
+
+    @media (min-width:541px) and (max-width:720px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "header header"
+            "main main"
+            "footer footer";
+        gap: 0.3%;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+            "main"
+            "footer";
+        gap: 0.5rem;
+    }
 }
 
 main {
@@ -27,13 +43,16 @@ main {
 }
 
 .carousel {
-    margin: 0 0.5rem;
+    margin: 0.5rem;
     padding: 0.5rem;
     width: 90vw;
     height: auto;
+
+    @media (min-width:320px) and (max-width:540px) {
+        margin: 0.25rem;
+        padding: 0.25rem;
+    }
 }
-
-
 
 .cards {
     justify-content: space-evenly;
@@ -47,11 +66,45 @@ main {
     background: linear-gradient(135deg, rgba(144, 185, 144, 0.4) 0%, rgba(185, 231, 185, 0.75) 50%, rgba(144, 185, 144, 0.4) 100%);
     color: rgb(5, 15, 20);
 
+    @media (min-width:721px) and (max-width:1230px) {
+        flex-direction: column;
+    }
+
+    @media (min-width:541px) and (max-width:720px) {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        width: 93vw;
+        margin: 0.250rem;
+    }
+
     &__video {
         width: 43vw;
         height: 40vh;
         margin: 1rem;
         padding: 0.5rem;
+
+        @media (min-width:721px) and (max-width:1230px) {
+            width: 68vw;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 65vw;
+            height: 23vh;
+            margin: 0.125rem;
+            margin-top: 1rem;
+            padding: 0.125rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 92vw;
+            height: 25vh;
+            margin: 0.35rem;
+            margin-top: 1rem;
+            padding: 0.35rem;
+        }
     }
 
     &__img {
@@ -59,11 +112,39 @@ main {
         height: auto;
         margin: 1rem;
         padding: 0.5rem;
+
+        @media (min-width:721px) and (max-width:1230px) {
+            width: 35vw;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 55vw;
+            margin: 1rem;
+            padding: 0.5rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 70vw;
+            margin: 0.5rem;
+            padding: 0.5rem;
+        }
     }
 
     &__divDescription {
         width: 33vw;
         height: auto;
+
+        @media (min-width:721px) and (max-width:1230px) {
+            width: 75vw;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 84vw;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 83vw;
+        }
     }
 
     &__title {
@@ -76,6 +157,22 @@ main {
         margin: 0.8rem;
         color: rgb(16, 44, 25);
         text-shadow: 1px 1px rgba(185, 231, 185, 1);
+
+        @media (min-width:721px) and (max-width:1230px) {
+            font-size: 1.6rem;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            font-size: 1.3rem;
+            padding: 0.125rem;
+            margin: 0.5rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            font-size: 1.3rem;
+            margin: 0.325rem;
+            padding: 0.325rem;
+        }
     }
 
     &__description {
@@ -91,17 +188,46 @@ main {
         background: rgba(125, 190, 125, 1);
         background: linear-gradient(135deg, rgba(50, 125, 60, 0.9) 0%, rgba(125, 190, 125, 1) 50%, rgba(50, 125, 60, 0.9) 100%);
         color: rgb(5, 15, 20);
+
+        @media (min-width:541px) and (max-width:720px) {
+            font-size: 1rem;
+            padding: 0.25rem;
+            margin: 0.5rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            font-size: 1rem;
+            padding: 1rem;
+            margin: 0.5rem;
+        }
     }
 }
 
 .somos {
     margin: 1rem;
 
+    @media (min-width:320px) and (max-width:540px) {
+        margin: 0;
+    }
+
     &__img {
         width: 50vw;
         height: auto;
         margin: 1rem;
         padding: 0.5rem;
+
+        @media (min-width:721px) and (max-width:1230px) {
+            width: 80vw;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 90vw;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 90vw;
+            margin: 0.5rem;
+        }
 
         &:hover {
             transform: scale(1.1);
@@ -116,6 +242,24 @@ main {
     grid-template-rows: repeat(3, 1fr);
     gap: 4rem;
     margin: 2rem;
+
+    @media (min-width:721px) and (max-width:1230px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 1rem;
+    }
+
+    @media (min-width:541px) and (max-width:720px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        margin: 1rem;
+    }
 
     &__div {
         border-radius: 30px;
@@ -146,6 +290,14 @@ main {
         border-radius: 30px;
         border-style: groove;
         border-color: rgb(88, 43, 13);
+
+        @media (min-width:721px) and (max-width:1230px) {
+            width: 15vw;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 35vw;
+        }
 
         &:hover {
             transform: scale(1.2);
@@ -180,6 +332,21 @@ main {
     &__div {
         justify-content: center;
         gap: 5rem;
+
+        @media (min-width:721px) and (max-width:1230px) {
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
     }
 
     &__img {
@@ -187,23 +354,56 @@ main {
         height: auto;
         margin: 1%;
 
-            &:hover {
-                transform: scale(1.1);
-                transition: all 1s;
-            }
+        @media (min-width:721px) and (max-width:1230px) {
+            width: 45vw;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 90vw;
+            height: auto;
+            margin: 1rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 90vw;
+            height: auto;
+            margin: 1rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 1s;
         }
     }
-
+}
 
 .map {
     justify-content: center;
     width: 50vw;
     height: 50vh;
     margin: 1rem 0rem;
+
+    @media (min-width:721px) and (max-width:1230px) {
+        width: 70vw;
+        height: 50vh;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        width: 90vw;
+    }
+
 }
 
 .contacto {
     justify-content: center;
+
+    @media (min-width:541px) and (max-width:720px) {
+        width: 90vw;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        width: 90vw;
+    }
 
     &__form {
         justify-content: center;
@@ -212,6 +412,15 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
         margin: 1rem;
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 90vw;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 90vw;
+        }
+
     }
 
     &__label {
@@ -221,6 +430,16 @@ main {
 
     &__text {
         margin-bottom: 0.6rem;
+    }
+
+    label {
+        @media (min-width:541px) and (max-width:720px) {
+            font-size: 1rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            font-size: 1rem;
+        }
     }
 
     textarea {
@@ -234,5 +453,13 @@ main {
         background-color: #f8f8f8e1;
         font-size: 1rem;
         resize: none;
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 76vw;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 76vw;
+        }
     }
 }

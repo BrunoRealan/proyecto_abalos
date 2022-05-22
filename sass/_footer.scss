@@ -11,7 +11,23 @@ footer {
     background: rgb(14, 40, 40);
     background: linear-gradient(180deg, rgba(14, 40, 40, 1) 0%, rgba(15, 58, 58, 1) 50%, rgba(14, 40, 40, 1) 100%);
 
+    @media (min-width:320px) and (max-width:540px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: (0.5fr 0.5fr 1fr);
+        grid-template-areas: "nombre"
+            "redes"
+            "span";
+        padding: 1rem;
+    }
+
     .footer {
+        @media (min-width:541px) and (max-width:720px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: (0.5fr 0.5fr 1fr);
+            grid-template-areas: "nombre"
+                "redes"
+                "span";
+        }
 
         &__name {
             grid-area: nombre;
@@ -35,6 +51,13 @@ footer {
             margin-bottom: 0;
             color: rgb(227, 174, 108);
             text-shadow: 1px 1px 1px black, 0 0 4px rgb(223, 190, 125), 0 0 2px rgba(199, 151, 56, 0.75);
+
+            @media (min-width:541px) and (max-width:720px) {
+                font-size: 1.5em;
+            }
+            @media (min-width:320px) and (max-width:540px) {
+                font-size: 1.35rem;
+            }
         }
 
         &__subtitle {
@@ -43,6 +66,16 @@ footer {
             margin-bottom: 0;
             color: rgb(220, 160, 100);
             text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
+
+            @media (min-width:541px) and (max-width:720px) {
+                font-size: 1.1em;
+                margin-bottom: 1rem;
+            }
+
+            @media (min-width:320px) and (max-width:540px) {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
         }
 
         &__span {
@@ -54,6 +87,14 @@ footer {
             margin: 1rem;
             text-shadow: 1px 1px 1px black, 0 0 3px rgb(71, 134, 130), 0 0 1px rgb(76, 165, 138);
             color: rgb(44, 121, 44);
+
+            @media (min-width:541px) and (max-width:720px) {
+                font-size: 1.1em;
+            }
+
+            @media (min-width:320px) and (max-width:540px) {
+                font-size: 1rem;
+            }
         }
 
         &__redes {
@@ -72,6 +113,26 @@ footer {
         text-align: center;
         text-decoration: none;
         margin: 0.3rem 0.25rem;
+
+        @media (min-width:721px) and (max-width:1230px) {
+            font-size: 1.6rem;
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            padding: 0.5rem;
+            font-size: 1.6rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            width: 2.2rem;
+            height: 2.2rem;
+        }
 
         &:hover {
             color: rgb(10, 20, 20);

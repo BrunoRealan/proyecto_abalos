@@ -8,11 +8,19 @@ header {
     z-index: 1;
 
     .header {
+        @media (min-width:541px) and (max-width:720px) {
+            justify-content: center;
+        }
+
         &__watermark {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 1rem;
+
+            @media (min-width:541px) and (max-width:720px) {
+                justify-content: center;
+            }
         }
 
         &__logo {
@@ -24,12 +32,26 @@ header {
                 transform: scale(1.1);
                 transition: all 0.5s;
             }
+
+            @media (min-width:541px) and (max-width:720px) {
+                width: 5.5rem;
+                margin: 0.1rem;
+            }
+
+            @media (min-width:320px) and (max-width:540px) {
+                width: 5rem;
+                margin: 0.1rem;
+            }
         }
 
         &__name {
             justify-content: center;
             padding: 0.125rem;
             margin: 0.125rem;
+
+            @media (min-width:320px) and (max-width:540px) {
+                margin: 0.125rem;
+            }
         }
 
         &__title {
@@ -39,6 +61,18 @@ header {
             padding-bottom: 0;
             text-shadow: 1px 1px 1px black, 0 0 4px rgb(223, 190, 125), 0 0 2px rgba(199, 151, 56, 0.75);
             color: rgb(227, 174, 108);
+
+            @media (min-width:541px) and (max-width:720px) {
+                font-size: 1.6rem;
+                padding: 0.125rem;
+                margin: 0.125rem;
+            }
+
+            @media (min-width:320px) and (max-width:540px) {
+                font-size: 1.6rem;
+                padding: 0.125rem;
+                margin: 0.125rem;
+            }
         }
 
         &__subtitle {
@@ -48,34 +82,56 @@ header {
             margin-bottom: 0;
             text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
             color: rgb(220, 160, 100);
+
+            @media (min-width:541px) and (max-width:720px) {
+                font-size: 1.2rem;
+            }
+
+            @media (min-width:320px) and (max-width:540px) {
+                font-size: 1.1rem;
+            }
         }
     }
+}
 
-    .nav-item {
-        font-family: 'Amatic SC', cursive;
-        font-size: 1.7rem;
+.nav-item {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.7rem;
 
-        &:hover {
-            transform: scale(1.25);
-            transition: all 0.3s;
-        }
+    @media (min-width:721px) and (max-width:1230px) {
+        font-size: 1.5rem;
     }
 
-    .nav-link {
-        color: rgb(60, 148, 97);
-        text-shadow: 2px 1px 1px black, 0 0 10px rgb(71, 134, 130), 00 0 5px rgb(76, 165, 138);
+    @media (min-width:541px) and (max-width:720px) {
+        font-size: 1.4rem;
+    }
 
-        &:active {
-            color: rgb(57, 122, 119);
-        }
+    @media (min-width:320px) and (max-width:540px) {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
 
-        &:visited {
-            color: rgb(62, 160, 103);
-        }
+    &:hover {
+        transform: scale(1.25);
+        transition: all 0.3s;
+    }
+}
 
-        &:hover {
-            color: rgb(168, 130, 24);
-            transition: all 0.5s;
-        }
+.nav-link {
+    color: rgb(60, 148, 97);
+    text-shadow: 2px 1px 1px black, 0 0 10px rgb(71, 134, 130), 00 0 5px rgb(76, 165, 138);
+
+    &:active {
+        color: rgb(57, 122, 119);
+    }
+
+    &:visited {
+        color: rgb(62, 160, 103);
+    }
+
+    &:hover {
+        color: rgb(168, 130, 24);
+        transition: all 0.5s;
     }
 }
