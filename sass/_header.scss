@@ -1,0 +1,81 @@
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0px;
+    border-top: 0.2rem solid rgb(15, 25, 25);
+    border-bottom: 0.2rem solid rgb(15, 25, 25);
+    background-image: linear-gradient(to bottom, #0f2121, #0f3c3c, #0f2121);
+    z-index: 1;
+
+    .header {
+        &__watermark {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &__logo {
+            margin: 0.5rem;
+            width: 6rem;
+            height: auto;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+        }
+
+        &__name {
+            justify-content: center;
+            padding: 0.125rem;
+            margin: 0.125rem;
+        }
+
+        &__title {
+            font-family: 'Bungee Inline', cursive;
+            font-size: 1.9rem;
+            padding: 0.35rem;
+            padding-bottom: 0;
+            text-shadow: 1px 1px 1px black, 0 0 4px rgb(223, 190, 125), 0 0 2px rgba(199, 151, 56, 0.75);
+            color: rgb(227, 174, 108);
+        }
+
+        &__subtitle {
+            font-size: 1.4rem;
+            font-family: 'Amatic SC', cursive;
+            padding: 0.125rem;
+            margin-bottom: 0;
+            text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
+            color: rgb(220, 160, 100);
+        }
+    }
+
+    .nav-item {
+        font-family: 'Amatic SC', cursive;
+        font-size: 1.7rem;
+
+        &:hover {
+            transform: scale(1.25);
+            transition: all 0.3s;
+        }
+    }
+
+    .nav-link {
+        color: rgb(60, 148, 97);
+        text-shadow: 2px 1px 1px black, 0 0 10px rgb(71, 134, 130), 00 0 5px rgb(76, 165, 138);
+
+        &:active {
+            color: rgb(57, 122, 119);
+        }
+
+        &:visited {
+            color: rgb(62, 160, 103);
+        }
+
+        &:hover {
+            color: rgb(168, 130, 24);
+            transition: all 0.5s;
+        }
+    }
+}
