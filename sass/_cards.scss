@@ -1,7 +1,7 @@
 .cards {
     justify-content: space-evenly;
     width: 88vw;
-    margin: 1rem;
+    margin: 1.5rem;
     border-style: groove;
     border-color: rgb(15, 58, 58);
     border-radius: 30px;
@@ -131,12 +131,14 @@
         color: rgb(5, 15, 20);
 
         @media (min-width:541px) and (max-width:720px) {
+            width: 60vw;
             font-size: 1rem;
             padding: 0.25rem;
             margin: 0.5rem;
         }
 
         @media (min-width:320px) and (max-width:540px) {
+            width: 70vw;
             font-size: 1rem;
             padding: 1rem;
             margin: 0.5rem;

@@ -27,7 +27,7 @@ header {
   border-top: 0.2rem solid #0f1919;
   border-bottom: 0.2rem solid #0f1919;
   background-image: linear-gradient(to bottom, #0f2121, #0f3c3c, #0f2121);
-  z-index: 1; }
+  z-index: 3; }
   @media (min-width: 541px) and (max-width: 720px) {
     header .header {
       justify-content: center; } }
@@ -40,19 +40,19 @@ header {
       header .header__watermark {
         justify-content: center; } }
   header .header__logo {
-    margin: 0.5rem;
     width: 6rem;
-    height: auto; }
+    height: auto;
+    margin: 0.5rem; }
     header .header__logo:hover {
       transform: scale(1.1);
       transition: all 0.5s; }
     @media (min-width: 541px) and (max-width: 720px) {
       header .header__logo {
-        width: 5.5rem;
+        width: 5rem;
         margin: 0.1rem; } }
     @media (min-width: 320px) and (max-width: 540px) {
       header .header__logo {
-        width: 4.5rem;
+        width: 4rem;
         margin: 0.1rem; } }
   header .header__name {
     justify-content: center;
@@ -94,7 +94,7 @@ header {
 
 .nav-item {
   font-family: "Amatic SC", cursive;
-  font-size: 1.7rem; }
+  font-size: 1.6rem; }
   .nav-item:hover {
     transform: scale(1.25);
     transition: all 0.3s; }
@@ -334,7 +334,7 @@ footer {
 .cards {
   justify-content: space-evenly;
   width: 88vw;
-  margin: 1rem;
+  margin: 1.5rem;
   border-style: groove;
   border-color: #0f3a3a;
   border-radius: 30px;
@@ -438,11 +438,13 @@ footer {
     color: #050f14; }
     @media (min-width: 541px) and (max-width: 720px) {
       .cards__description {
+        width: 60vw;
         font-size: 1rem;
         padding: 0.25rem;
         margin: 0.5rem; } }
     @media (min-width: 320px) and (max-width: 540px) {
       .cards__description {
+        width: 70vw;
         font-size: 1rem;
         padding: 1rem;
         margin: 0.5rem; } }
@@ -455,7 +457,7 @@ footer {
   .somos__img {
     width: 45vw;
     height: auto;
-    margin: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
     box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85); }
     .somos__img:hover {
       transform: scale(1.1);
@@ -496,8 +498,8 @@ footer {
   @media (min-width: 320px) and (max-width: 540px) {
     .sabores {
       grid-template-columns: 1fr;
-      gap: 0.5rem;
-      margin: 1rem; } }
+      gap: 1rem;
+      margin: 2rem 1rem; } }
   .sabores__div {
     border-radius: 30px;
     border-style: groove;
@@ -607,12 +609,14 @@ footer {
   justify-content: center;
   width: 50vw;
   height: 50vh;
-  margin: 1rem 0rem;
+  margin: 2rem 0rem 4rem 0rem;
   box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85); }
   @media (min-width: 721px) and (max-width: 1230px) {
     .map {
-      width: 70vw;
-      height: 50vh; } }
+      width: 70vw; } }
+  @media (min-width: 541px) and (max-width: 720px) {
+    .map {
+      width: 80vw; } }
   @media (min-width: 320px) and (max-width: 540px) {
     .map {
       width: 85vw; } }
@@ -635,7 +639,7 @@ footer {
     box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85); }
     @media (min-width: 541px) and (max-width: 720px) {
       .contacto__form {
-        width: 90vw; } }
+        width: 80vw; } }
     @media (min-width: 320px) and (max-width: 540px) {
       .contacto__form {
         width: 85vw; } }

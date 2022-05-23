@@ -5,7 +5,7 @@ header {
     border-top: 0.2rem solid rgb(15, 25, 25);
     border-bottom: 0.2rem solid rgb(15, 25, 25);
     background-image: linear-gradient(to bottom, #0f2121, #0f3c3c, #0f2121);
-    z-index: 1;
+    z-index: 3;
 
     .header {
         @media (min-width:541px) and (max-width:720px) {
@@ -24,9 +24,9 @@ header {
         }
 
         &__logo {
-            margin: 0.5rem;
             width: 6rem;
             height: auto;
+            margin: 0.5rem;
 
             &:hover {
                 transform: scale(1.1);
@@ -34,12 +34,12 @@ header {
             }
 
             @media (min-width:541px) and (max-width:720px) {
-                width: 5.5rem;
+                width: 5rem;
                 margin: 0.1rem;
             }
 
             @media (min-width:320px) and (max-width:540px) {
-                width: 4.5rem;
+                width: 4rem;
                 margin: 0.1rem;
             }
         }
@@ -96,7 +96,7 @@ header {
 
 .nav-item {
     font-family: $font-subtitle;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 
     &:hover {
         transform: scale(1.25);

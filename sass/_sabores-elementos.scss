@@ -19,8 +19,8 @@
 
     @media (min-width:320px) and (max-width:540px) {
         grid-template-columns: 1fr;
-        gap: 0.5rem;
-        margin: 1rem;
+        gap: 1rem;
+        margin: 2rem 1rem;
     }
 
     &__div {

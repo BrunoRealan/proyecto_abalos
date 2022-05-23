@@ -18,8 +18,12 @@
         margin: 1rem;
         box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
 
+        @media (min-width:721) and (max-width:1230px) {
+            
+        }
+
         @media (min-width:541px) and (max-width:720px) {
-            width: 90vw;
+            width: 80vw;
         }
 
         @media (min-width:320px) and (max-width:540px) {
