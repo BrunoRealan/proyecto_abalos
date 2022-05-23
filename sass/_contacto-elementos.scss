@@ -1,0 +1,70 @@
+.contacto {
+    justify-content: center;
+
+    @media (min-width:541px) and (max-width:720px) {
+        width: 90vw;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        width: 90vw;
+    }
+
+    &__form {
+        justify-content: center;
+        background-image: url(../resources/imgContact.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 1rem;
+        box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 90vw;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 85vw;
+        }
+
+    }
+
+    &__label {
+        justify-content: center;
+        margin-bottom: 1.8rem;
+    }
+
+    &__text {
+        margin-bottom: 0.6rem;
+    }
+
+    label {
+        @media (min-width:541px) and (max-width:720px) {
+            font-size: 1rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            font-size: 1rem;
+        }
+    }
+
+    textarea {
+        width: 25rem;
+        height: 10rem;
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background-color: #f8f8f8e1;
+        font-size: 1rem;
+        resize: none;
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 76vw;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 76vw;
+        }
+    }
+}

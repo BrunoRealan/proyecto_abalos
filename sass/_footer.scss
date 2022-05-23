@@ -114,6 +114,11 @@ footer {
         text-decoration: none;
         margin: 0.3rem 0.25rem;
 
+        &:hover {
+            color: rgb(10, 20, 20);
+            opacity: 0.6;
+        }
+
         @media (min-width:721px) and (max-width:1230px) {
             font-size: 1.6rem;
             width: 3.2rem;
@@ -132,11 +137,6 @@ footer {
             font-size: 1.5rem;
             width: 2.2rem;
             height: 2.2rem;
-        }
-
-        &:hover {
-            color: rgb(10, 20, 20);
-            opacity: 0.6;
         }
     }
 

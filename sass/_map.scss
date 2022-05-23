@@ -1,0 +1,16 @@
+.map {
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    margin: 1rem 0rem;
+    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+
+    @media (min-width:721px) and (max-width:1230px) {
+        width: 70vw;
+        height: 50vh;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        width: 85vw;
+    }
+}

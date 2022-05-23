@@ -1,0 +1,22 @@
+.columnaCentrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filaCentrada {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (min-width:320px) and (max-width:540px) {
+        flex-direction: column;
+    }
+}
+
+.reversa {
+    flex-direction: row-reverse;
+    @media (min-width:320px) and (max-width:540px) {
+        flex-direction: column;
+    }
+}

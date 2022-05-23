@@ -1,0 +1,145 @@
+.cards {
+    justify-content: space-evenly;
+    width: 88vw;
+    margin: 1rem;
+    border-style: groove;
+    border-color: rgb(15, 58, 58);
+    border-radius: 30px;
+    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+    background: rgba(185, 231, 185, 0.75);
+    background: linear-gradient(135deg, rgba(144, 185, 144, 0.4) 0%, rgba(185, 231, 185, 0.75) 50%, rgba(144, 185, 144, 0.4) 100%);
+    color: rgb(5, 15, 20);
+
+    @media (min-width:721px) and (max-width:1230px) {
+        flex-direction: column;
+    }
+
+    @media (min-width:541px) and (max-width:720px) {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    @media (min-width:320px) and (max-width:540px) {
+        width: 93vw;
+        margin: 1rem 0.25rem 0.25rem 0.25rem;
+    }
+
+    &__video {
+        width: 43vw;
+        height: 40vh;
+        margin: 1rem;
+        box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+
+
+        @media (min-width:721px) and (max-width:1230px) {
+            width: 68vw;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 65vw;
+            height: 23vh;
+            margin: 0.125rem;
+            margin-top: 1rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 85vw;
+            height: 25vh;
+            margin: 1rem 0rem;
+        }
+    }
+
+    &__img {
+        width: 23vw;
+        height: auto;
+        margin: 1rem;
+        box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+
+
+        @media (min-width:721px) and (max-width:1230px) {
+            width: 35vw;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 55vw;
+            margin: 1rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 70vw;
+            margin: 1rem 0rem;
+        }
+    }
+
+    &__divDescription {
+        width: 33vw;
+        height: auto;
+
+        @media (min-width:721px) and (max-width:1230px) {
+            width: 75vw;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            width: 84vw;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            width: 83vw;
+        }
+    }
+
+    &__title {
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 1.9rem;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+        margin: 0.8rem;
+        color: rgb(16, 44, 25);
+        text-shadow: 1px 1px rgba(185, 231, 185, 1);
+
+        @media (min-width:721px) and (max-width:1230px) {
+            font-size: 1.6rem;
+        }
+
+        @media (min-width:541px) and (max-width:720px) {
+            font-size: 1.3rem;
+            padding: 0.125rem;
+            margin: 0.5rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            font-size: 1.3rem;
+            margin: 0.325rem;
+            padding: 0.325rem;
+        }
+    }
+
+    &__description {
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 1.25rem;
+        text-align: justify;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 30px;
+        border-style: groove;
+        box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.9);
+        border-color: rgb(15, 58, 58);
+        background: rgba(125, 190, 125, 1);
+        background: linear-gradient(135deg, rgba(50, 125, 60, 0.9) 0%, rgba(125, 190, 125, 1) 50%, rgba(50, 125, 60, 0.9) 100%);
+        color: rgb(5, 15, 20);
+
+        @media (min-width:541px) and (max-width:720px) {
+            font-size: 1rem;
+            padding: 0.25rem;
+            margin: 0.5rem;
+        }
+
+        @media (min-width:320px) and (max-width:540px) {
+            font-size: 1rem;
+            padding: 1rem;
+            margin: 0.5rem;
+        }
+    }
+}
