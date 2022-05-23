@@ -1,3 +1,21 @@
-$font-principal: 'Mouse Memoirs', sans-serif;
-$font-title: 'Bungee Inline', cursive;
+/* Fuentes */
+
+$font-logo: 'Bungee Inline', cursive;
 $font-subtitle: 'Amatic SC', cursive;
+$font-principal: 'Mouse Memoirs', sans-serif;
+$font-p: 'Courgette', cursive;
+
+/* Colores */
+
+$bg-color: linear-gradient(90deg, rgba(18, 45, 20, 1) 0%, rgba(40, 100, 40, 1) 50%, rgba(18, 45, 20, 1) 100%);
+
+
+
+/*Media Queries BreakPoints*/
+
+$min-xs: 320px;
+$max-xs: 540px;
+$min-md: 541px;
+$max-md: 720px;
+$min-lg: 721px;
+$max-lg: 1200px;

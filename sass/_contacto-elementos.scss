@@ -38,6 +38,15 @@
     }
 
     label {
+        font-family: $font-principal;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0.5rem;
+        padding: 0.25rem 0.8rem 0.25rem 0.8rem;
+        border-radius: 10px;
+        background-color: rgba(14, 29, 31, 0.90);
+        color: rgb(187, 134, 68);
+
         @media (min-width:541px) and (max-width:720px) {
             font-size: 1rem;
         }

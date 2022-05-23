@@ -33,7 +33,7 @@
     }
 
     &__name {
-        font-family: 'Mouse Memoirs', sans-serif;
+        font-family: $font-principal;
         font-size: 1.7rem;
         font-weight: bold;
         text-decoration: underline;
@@ -92,7 +92,7 @@
     }
 
     &__p {
-        font-family: 'Courgette', cursive;
+        font-family: $font-p;
         font-size: 1.1rem;
         padding: 1rem;
         margin: 0.125rem;

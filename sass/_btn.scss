@@ -1,5 +1,5 @@
 .btn {
-    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: $font-principal;
     font-size: 1.3rem;
     margin: 0.6rem;
     box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
@@ -7,6 +7,7 @@
     &:hover {
         transform: scale(1.2);
         transition: all 0.5s;
+
         @media (min-width:320px) and (max-width:540px) {
             transform: none;
         }

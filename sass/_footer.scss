@@ -20,14 +20,15 @@ footer {
         padding: 1rem;
     }
 
+    @media (min-width:541px) and (max-width:720px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: (0.5fr 0.5fr 1fr);
+        grid-template-areas: "nombre"
+            "redes"
+            "span";
+    }
+
     .footer {
-        @media (min-width:541px) and (max-width:720px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: (0.5fr 0.5fr 1fr);
-            grid-template-areas: "nombre"
-                "redes"
-                "span";
-        }
 
         &__name {
             grid-area: nombre;
@@ -45,7 +46,7 @@ footer {
         }
 
         &__title {
-            font-family: 'Bungee Inline', cursive;
+            font-family: $font-logo;
             font-size: 1.8rem;
             padding: 0.125rem;
             margin-bottom: 0;
@@ -55,14 +56,15 @@ footer {
             @media (min-width:541px) and (max-width:720px) {
                 font-size: 1.5em;
             }
+
             @media (min-width:320px) and (max-width:540px) {
                 font-size: 1.35rem;
             }
         }
 
         &__subtitle {
+            font-family: $font-subtitle;
             font-size: 1.2rem;
-            font-family: 'Amatic SC', cursive;
             margin-bottom: 0;
             color: rgb(220, 160, 100);
             text-shadow: 1px 1px 1px black, 0 0 12px rgb(223, 190, 125), 00 0 6px rgba(199, 151, 56, 0.75);
@@ -79,12 +81,12 @@ footer {
         }
 
         &__span {
-            grid-area: span;
-            justify-content: center;
+            font-family: $font-principal;
             font-size: 1.4rem;
-            font-family: 'Mouse Memoirs', sans-serif;
-            text-align: center;
+            justify-content: center;
+            grid-area: span;
             margin: 1rem;
+            text-align: center;
             text-shadow: 1px 1px 1px black, 0 0 3px rgb(71, 134, 130), 0 0 1px rgb(76, 165, 138);
             color: rgb(44, 121, 44);
 
@@ -106,13 +108,13 @@ footer {
 
     .fa {
         justify-content: center;
-        padding: 0.5rem;
         font-size: 2rem;
         width: 4rem;
         height: 4rem;
+        margin: 0.3rem 0.25rem;
+        padding: 0.5rem;
         text-align: center;
         text-decoration: none;
-        margin: 0.3rem 0.25rem;
 
         &:hover {
             color: rgb(10, 20, 20);
@@ -126,15 +128,15 @@ footer {
         }
 
         @media (min-width:541px) and (max-width:720px) {
-            padding: 0.5rem;
             font-size: 1.6rem;
+            padding: 0.5rem;
             width: 2.5rem;
             height: 2.5rem;
         }
 
         @media (min-width:320px) and (max-width:540px) {
-            padding: 0.5rem;
             font-size: 1.5rem;
+            padding: 0.5rem;
             width: 2.2rem;
             height: 2.2rem;
         }
