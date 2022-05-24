@@ -11,6 +11,7 @@ $bg-color: linear-gradient(90deg, rgba(18, 45, 20, 1) 0%, rgba(40, 100, 40, 1) 5
 $bg-color-header: linear-gradient(180deg, rgba(15,33,33,1) 0%, rgba(15,60,60,1) 50%, rgba(15,33,33,1) 100%);
 $bg-color-footer: linear-gradient(180deg, rgba(14, 40, 40, 1) 0%, rgba(15, 58, 58, 1) 50%, rgba(14, 40, 40, 1) 100%);
 $bg-color-fa-insta: linear-gradient(135deg, rgba(81, 91, 212, 1) 0%, rgba(129, 52, 175, 1) 50%, rgb(172, 39, 99) 100%);
+$bg-color-title: linear-gradient(180deg, rgba(15,43,43,1) 0%, rgba(15,60,60,1) 50%, rgba(15,43,43,1) 100%);
 $bg-color-card: linear-gradient(135deg, rgba(144, 185, 144, 0.4) 0%, rgba(185, 231, 185, 0.75) 50%, rgba(144, 185, 144, 0.4) 100%);
 $bg-color-sabores: linear-gradient(90deg, rgba(16, 55, 35, 1) 0%, rgba(50, 95, 50, 1) 50%, rgba(16, 55, 35, 1) 100%);
 $bg-color-description: linear-gradient(135deg, rgba(50, 125, 60, 0.9) 0%, rgba(125, 190, 125, 1) 50%, rgba(50, 125, 60, 0.9) 100%);
@@ -26,9 +27,11 @@ $color-title: rgb(187, 134, 68);
 $color-title-card: rgb(16, 44, 25);
 $color-title-saboresName: rgb(95, 28, 7);
 $color-black: rgb(10, 20, 20);
+$color-white: rgb(229, 229, 229);
 $border-color-header: 0.2rem solid rgb(15, 25, 25);
 $border-color-footer: 0.2rem solid rgb(11, 26, 27);
-$border-color-cards:  rgb(15, 58, 58);
+$border-color-title: 2px solid rgb(15, 37, 37);
+$border-color-description: rgb(15, 58, 58);
 $border-color-sabores: rgb(14, 50, 35);
 $border-color-saboresImg: rgb(88, 43, 13);
 $box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
@@ -38,7 +41,7 @@ $textshadow-title-card: 1px 1px rgba(185, 231, 185, 1);
 $textshadow-link: 2px 1px 1px black, 0 0 10px rgb(71, 134, 130), 0 0 5px rgb(76, 165, 138);
 $textshadow-span: 1px 1px 1px black, 0 0 3px rgb(71, 134, 130), 0 0 1px rgb(76, 165, 138);
 $textshadow-title-sabores-name: 1px 1px 1px black, 0 0 15px rgb(223, 190, 125), 0 0 8px rgb(168, 118, 103);
-$textshadow-title-sabores-li: 3px 3px 2px rgb(0, 0, 0), 0 0 5px rgb(43, 34, 18), 0 0 2px rgb(20, 17, 12);
+$textshadow-sabores-li-p: 3px 3px 2px rgb(0, 0, 0), 0 0 5px rgb(43, 34, 18), 0 0 2px rgb(20, 17, 12);
 /*Media Queries BreakPoints*/
 
 $min-xs: 320px;

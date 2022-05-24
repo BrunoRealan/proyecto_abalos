@@ -24,6 +24,7 @@ body {
 
 main {
     grid-area: main;
+    @include columnaCentrada
 }
 
 .gridContainer {
@@ -43,7 +44,6 @@ main {
     }
 
     @media (min-width:$min-xs) and (max-width:$max-xs) {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "header"
             "main"

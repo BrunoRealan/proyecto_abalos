@@ -15,30 +15,19 @@ footer {
     }
 
     @media (min-width:$min-md) and (max-width:$max-md) {
-        grid-template-columns: 1fr;
-        grid-template-rows: (0.5fr 0.5fr 1fr);
-        grid-template-areas: "nombre"
-            "redes"
-            "span";
-        padding: 1rem;
+        @include queries-footer-grid;
     }
 
     @media (min-width:$min-xs) and (max-width:$max-xs) {
-        grid-template-columns: 1fr;
-        grid-template-rows: (0.5fr 0.5fr 1fr);
-        grid-template-areas: "nombre"
-            "redes"
-            "span";
-        padding: 1rem;
+        @include queries-footer-grid;
     }
-
-
 
     .footer {
 
         &__name {
             grid-area: nombre;
             justify-self: center;
+            @include columnaCentrada;
         }
 
         &__a {
@@ -55,8 +44,7 @@ footer {
             font-size: 1.8rem;
             padding: 0.125rem;
             margin-bottom: 0;
-            color: $color-title-logo;
-            text-shadow: $textshadow-title-logo;
+            @include color-textshadow-logo;
 
             @media (min-width:$min-md) and (max-width:$max-md) {
                 font-size: 1.5em;
@@ -71,29 +59,26 @@ footer {
             font-family: $font-subtitle;
             font-size: 1.2rem;
             margin-bottom: 0;
-            color: $color-title-logo;
-            text-shadow: $textshadow-title-logo;
+            @include color-textshadow-logo;
+        }
 
-            @media (min-width:$min-md) and (max-width:$max-md) {
-                font-size: 1.1em;
-                margin-bottom: 1rem;
-            }
+        @media (min-width:$min-md) and (max-width:$max-md) {
+            @include queries-footer-subtitle;
+        }
 
-            @media (min-width:$min-xs) and (max-width:$max-xs) {
-                font-size: 1.1rem;
-                margin-bottom: 1rem;
-            }
+        @media (min-width:$min-xs) and (max-width:$max-xs) {
+            @include queries-footer-subtitle;
         }
 
         &__span {
+            grid-area: span;
             font-family: $font-principal;
             font-size: 1.4rem;
-            justify-content: center;
-            grid-area: span;
             margin: 1rem;
-            text-align: center;
             text-shadow: $textshadow-span;
             color: $color-span;
+            @include text-align-justify-center;
+            @include columnaCentrada;
 
             @media (min-width:$min-md) and (max-width:$max-md) {
                 font-size: 1.1em;
@@ -112,14 +97,13 @@ footer {
     }
 
     .fa {
-        justify-content: center;
         font-size: 2rem;
         width: 4rem;
         height: 4rem;
         margin: 0.3rem 0.25rem;
         padding: 0.5rem;
-        text-align: center;
         text-decoration: none;
+        @include text-align-justify-center;
 
         &:hover {
             color: $color-black;
@@ -152,5 +136,6 @@ footer {
         color: $color-fa-insta;
         border-radius: $border-radius-fa;
         transition: $transition;
+        @include filaCentrada;
     }
 }

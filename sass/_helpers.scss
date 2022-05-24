@@ -1,4 +1,98 @@
-@mixin form-label {
+@mixin columnaCentrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin filaCentrada {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (min-width:$min-xs) and (max-width:$max-xs) {
+        flex-direction: column;
+    }
+}
+
+@mixin reversa {
+    flex-direction: row-reverse;
+
+    @media (min-width:$min-xs) and (max-width:$max-xs) {
+        flex-direction: column;
+    }
+}
+
+@mixin color-textshadow-logo {
+    color: $color-title-logo;
+    text-shadow: $textshadow-title-logo;
+}
+
+@mixin margin-text-min {
+    padding: 0.125rem;
+    margin: 0.125rem;
+}
+
+@mixin margin-text-med {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+@mixin margin-text-lg {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+@mixin scale-hover-slow {
+    transform: $scale;
+    transition: $transition-img;
+}
+
+@mixin scale-hover-fast {
+    transform: $scale;
+    transition: $transition;
+}
+
+
+@mixin outline-label {
     border-radius: $border-radius-input;
     background-color: $bg-color-input;
+}
+
+@mixin outline {
+    border-style: outset;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+@mixin text-align-justify-center {
+    text-align: center;
+    justify-content: center;
+}
+
+//Queries
+
+@mixin queries-footer-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: (0.5fr 0.5fr 1fr);
+    grid-template-areas: "nombre"
+        "redes"
+        "span";
+    padding: 1rem;
+}
+
+@mixin queries-footer-subtitle {
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+}
+
+@mixin queries-p {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.125rem;
+}
+
+@mixin queries-descritpion {
+    font-size: 1rem;
+    width: 80vw;
+    height: auto;
 }

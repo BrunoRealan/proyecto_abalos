@@ -59,7 +59,10 @@ header {
   header .header__name {
     justify-content: center;
     padding: 0.125rem;
-    margin: 0.125rem; }
+    margin: 0.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     @media (min-width: 320px) and (max-width: 540px) {
       header .header__name {
         margin: 0.125rem; } }
@@ -154,7 +157,10 @@ footer {
       padding: 1rem; } }
   footer .footer__name {
     grid-area: nombre;
-    justify-self: center; }
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   footer .footer__a {
     text-decoration: none; }
     footer .footer__a:hover {
@@ -179,23 +185,26 @@ footer {
     margin-bottom: 0;
     color: #e3ae6c;
     text-shadow: 1px 1px 1px black, 0 0 8px #dfbe7d, 0 0 4px rgba(199, 151, 56, 0.8); }
-    @media (min-width: 541px) and (max-width: 720px) {
-      footer .footer__subtitle {
-        font-size: 1.1em;
-        margin-bottom: 1rem; } }
-    @media (min-width: 320px) and (max-width: 540px) {
-      footer .footer__subtitle {
-        font-size: 1.1rem;
-        margin-bottom: 1rem; } }
+  @media (min-width: 541px) and (max-width: 720px) {
+    footer .footer {
+      font-size: 1.1em;
+      margin-bottom: 1rem; } }
+  @media (min-width: 320px) and (max-width: 540px) {
+    footer .footer {
+      font-size: 1.1em;
+      margin-bottom: 1rem; } }
   footer .footer__span {
+    grid-area: span;
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 1.4rem;
-    justify-content: center;
-    grid-area: span;
     margin: 1rem;
-    text-align: center;
     text-shadow: 1px 1px 1px black, 0 0 3px #478682, 0 0 1px #4ca58a;
-    color: #2c792c; }
+    color: #2c792c;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     @media (min-width: 541px) and (max-width: 720px) {
       footer .footer__span {
         font-size: 1.1em; } }
@@ -207,14 +216,14 @@ footer {
     justify-content: center;
     margin: 0; }
   footer .fa {
-    justify-content: center;
     font-size: 2rem;
     width: 4rem;
     height: 4rem;
     margin: 0.3rem 0.25rem;
     padding: 0.5rem;
+    text-decoration: none;
     text-align: center;
-    text-decoration: none; }
+    justify-content: center; }
     footer .fa:hover {
       color: #0a1414;
       opacity: 0.55; }
@@ -239,10 +248,22 @@ footer {
     background: linear-gradient(135deg, #515bd4 0%, #8134af 50%, #ac2763 100%);
     color: #0d330d;
     border-radius: 50%;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    @media (min-width: 320px) and (max-width: 540px) {
+      footer .fa-instagram {
+        flex-direction: column; } }
 
 .title__container {
-  justify-content: center; }
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  @media (min-width: 320px) and (max-width: 540px) {
+    .title__container {
+      flex-direction: column; } }
   .title__container .title {
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 1.7rem;
@@ -253,11 +274,12 @@ footer {
     padding: 0.5rem;
     margin: 1rem 0;
     border: 2px solid #0f2525;
-    border-radius: 30px;
-    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
     text-shadow: 1px 1px 1px black, 0 0 5px #816327, 0 0 3px #2e2410;
-    background-image: linear-gradient(to bottom, #0f2b2b, #0f3c3c, #0f2b2b);
-    color: #bb8644; }
+    background-image: linear-gradient(180deg, #0f2b2b 0%, #0f3c3c 50%, #0f2b2b 100%);
+    color: #bb8644;
+    border-style: outset;
+    border-radius: 30px;
+    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85); }
     @media (min-width: 541px) and (max-width: 720px) {
       .title__container .title {
         font-size: 1.6rem; } }
@@ -273,22 +295,22 @@ footer {
   font-size: 1.25rem;
   width: 40vw;
   text-align: center;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  border-radius: 30px;
-  border-style: groove;
-  box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
   border-color: #0f3a3a;
-  background: #7dbe7d;
   background: linear-gradient(135deg, rgba(50, 125, 60, 0.9) 0%, #7dbe7d 50%, rgba(50, 125, 60, 0.9) 100%);
-  color: #0a1414; }
+  color: #0a1414;
+  padding: 0.125rem;
+  margin: 0.125rem;
+  border-style: outset;
+  border-radius: 30px;
+  box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85); }
   @media (min-width: 721px) and (max-width: 1200px) {
     .description {
       width: 80vw; } }
   @media (min-width: 541px) and (max-width: 720px) {
     .description {
       font-size: 1rem;
-      width: 80vw; } }
+      width: 80vw;
+      height: auto; } }
   @media (min-width: 320px) and (max-width: 540px) {
     .description {
       font-size: 1rem;
@@ -298,22 +320,22 @@ footer {
 .p {
   font-family: "Courgette", cursive;
   font-size: 1.2em;
-  padding: 0.5rem;
-  margin: 0.5rem;
   text-align: center;
   list-style-type: none;
-  color: white;
-  text-shadow: 3px 3px 2px black, 0 0 5px #2b2212, 0 0 2px #14110c; }
+  color: #e5e5e5;
+  text-shadow: 3px 3px 2px black, 0 0 5px #2b2212, 0 0 2px #14110c;
+  padding: 0.125rem;
+  margin: 0.125rem; }
   @media (min-width: 541px) and (max-width: 720px) {
     .p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: 1rem;
       padding: 0.125rem; } }
   @media (min-width: 320px) and (max-width: 540px) {
     .p {
       font-size: 1rem;
       margin: 1rem;
-      padding: 3px; } }
+      padding: 0.125rem; } }
   .p__title {
     font-size: 1.5rem; }
 
@@ -342,11 +364,12 @@ footer {
   justify-content: space-evenly;
   width: 88vw;
   margin: 1.5rem;
-  border-style: groove;
   border-color: #0f3a3a;
-  border-radius: 30px;
   box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
-  background: linear-gradient(135deg, rgba(144, 185, 144, 0.4) 0%, rgba(185, 231, 185, 0.75) 50%, rgba(144, 185, 144, 0.4) 100%); }
+  background: linear-gradient(135deg, rgba(144, 185, 144, 0.4) 0%, rgba(185, 231, 185, 0.75) 50%, rgba(144, 185, 144, 0.4) 100%);
+  border-style: outset;
+  border-radius: 30px;
+  box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85); }
   @media (min-width: 721px) and (max-width: 1200px) {
     .cards {
       flex-direction: column; } }
@@ -395,7 +418,10 @@ footer {
         margin: 1rem 0; } }
   .cards__divDescription {
     width: 33vw;
-    height: auto; }
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     @media (min-width: 721px) and (max-width: 1200px) {
       .cards__divDescription {
         width: 75vw; } }
@@ -411,10 +437,10 @@ footer {
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    padding: 1rem;
-    margin: 0.8rem;
     color: #102c19;
-    text-shadow: 1px 1px #b9e7b9; }
+    text-shadow: 1px 1px #b9e7b9;
+    margin: 1rem;
+    padding: 1rem; }
     @media (min-width: 721px) and (max-width: 1200px) {
       .cards__title {
         font-size: 1.6rem; } }
@@ -432,14 +458,14 @@ footer {
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 1.25rem;
     text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 30px;
-    border-style: groove;
-    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
     border-color: #0f3a3a;
     background: linear-gradient(135deg, rgba(50, 125, 60, 0.9) 0%, #7dbe7d 50%, rgba(50, 125, 60, 0.9) 100%);
-    color: #0a1414; }
+    color: #0a1414;
+    margin: 1rem;
+    padding: 1rem;
+    border-style: outset;
+    border-radius: 30px;
+    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85); }
     @media (min-width: 541px) and (max-width: 720px) {
       .cards__description {
         width: 60vw;
@@ -453,7 +479,10 @@ footer {
         margin: 0.5rem; } }
 
 .somos {
-  margin: 1rem; }
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   @media (min-width: 320px) and (max-width: 540px) {
     .somos {
       margin: 0; } }
@@ -485,7 +514,6 @@ footer {
 .sabores {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 4rem;
   margin: 2rem; }
   @media (min-width: 721px) and (max-width: 1200px) {
@@ -504,27 +532,30 @@ footer {
       gap: 1rem;
       margin: 2rem 1rem; } }
   .sabores__div {
-    border-radius: 30px;
-    border-style: groove;
-    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
     border-color: #0e3223;
-    background: linear-gradient(90deg, #103723 0%, #325f32 50%, #103723 100%); }
+    background: linear-gradient(90deg, #103723 0%, #325f32 50%, #103723 100%);
+    border-style: outset;
+    border-radius: 30px;
+    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .sabores__name {
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 1.7rem;
     font-weight: bold;
     text-decoration: underline;
-    padding: 0.5rem;
-    margin: 0.5rem;
     text-shadow: 1px 1px 1px black, 0 0 15px #dfbe7d, 0 0 8px #a87667;
-    color: #5f1c07; }
+    color: #5f1c07;
+    padding: 0.125rem;
+    margin: 0.125rem; }
   .sabores__img {
     width: 9vw;
     height: auto;
     margin: 1rem;
-    border-radius: 30px;
-    border-style: groove;
     border-color: #582b0d;
+    border-style: outset;
+    border-radius: 30px;
     box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85); }
     .sabores__img:hover {
       transform: scale(1.1);
@@ -622,7 +653,10 @@ footer {
       width: 90vw; } }
 
 .contacto {
-  justify-content: center; }
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   @media (min-width: 541px) and (max-width: 720px) {
     .contacto {
       width: 90vw; } }
@@ -636,7 +670,10 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 1rem;
-    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85); }
+    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     @media (min-width: 541px) and (max-width: 720px) {
       .contacto__form {
         width: 80vw; } }
@@ -647,7 +684,10 @@ footer {
     justify-content: center;
     margin-bottom: 1.8rem; }
   .contacto__text {
-    margin-bottom: 0.6rem; }
+    margin-bottom: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .contacto label {
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 1.1rem;
@@ -656,7 +696,10 @@ footer {
     padding: 0.25rem 0.8rem 0.25rem 0.8rem;
     border-radius: 30px;
     background-color: rgba(14, 29, 31, 0.9);
-    color: #bb8644; }
+    color: #bb8644;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     @media (min-width: 541px) and (max-width: 720px) {
       .contacto label {
         font-size: 1rem; } }
@@ -679,8 +722,7 @@ footer {
     padding: 0.5rem 1rem;
     border-radius: 30px;
     background-color: rgba(230, 230, 230, 0.7);
-    font-size: 1rem;
-    resize: none; }
+    font-size: 1rem; }
     @media (min-width: 541px) and (max-width: 720px) {
       .contacto textarea {
         width: 76vw; } }
@@ -696,7 +738,10 @@ body {
   background: linear-gradient(90deg, #122d14 0%, #286428 50%, #122d14 100%); }
 
 main {
-  grid-area: main; }
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .gridContainer {
   display: grid;
@@ -710,7 +755,6 @@ main {
       gap: 0.5rem; } }
   @media (min-width: 320px) and (max-width: 540px) {
     .gridContainer {
-      display: grid;
       grid-template-columns: 1fr;
       grid-template-areas: "header" "main" "footer";
       gap: 0.5rem; } }

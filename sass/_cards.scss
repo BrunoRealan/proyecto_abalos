@@ -2,11 +2,9 @@
     justify-content: space-evenly;
     width: 88vw;
     margin: 1.5rem;
-    border-style: groove;
-    border-color: $border-color-cards;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-    background: $bg-color-card;
+    border-color: $border-color-description;
+    box-shadow: $box-shadow;    background: $bg-color-card;
+    @include outline;
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
         flex-direction: column;
@@ -71,6 +69,7 @@
     &__divDescription {
         width: 33vw;
         height: auto;
+        @include columnaCentrada;
 
         @media (min-width:$min-lg) and (max-width:$max-lg) {
             width: 75vw;
@@ -91,10 +90,9 @@
         font-weight: bold;
         text-decoration: none;
         text-align: center;
-        padding: 1rem;
-        margin: 0.8rem;
         color: $color-title-card;
         text-shadow: $textshadow-title-card;
+        @include margin-text-lg;
 
         @media (min-width:$min-lg) and (max-width:$max-lg) {
             font-size: 1.6rem;
@@ -117,14 +115,11 @@
         font-family: $font-principal;
         font-size: 1.25rem;
         text-align: center;
-        padding: 1rem;
-        margin: 1rem;
-        border-radius: $border-radius;
-        border-style: groove;
-        box-shadow: $box-shadow;
-        border-color: $border-color-cards;
+        border-color: $border-color-description;
         background: $bg-color-description;
         color: $color-black;
+        @include margin-text-lg;
+        @include outline;
 
         @media (min-width:$min-md) and (max-width:$max-md) {
             width: 60vw;

@@ -1,5 +1,6 @@
 .somos {
     margin: 1rem;
+    @include columnaCentrada;
 
     @media (min-width:$min-xs) and (max-width:$max-xs) {
         margin: 0;

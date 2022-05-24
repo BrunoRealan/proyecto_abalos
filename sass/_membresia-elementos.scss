@@ -28,8 +28,7 @@
         box-shadow: $box-shadow;
 
         &:hover {
-            transform: $scale;
-            transition: $transition-img;
+            @include scale-hover-slow;
 
             @media (min-width:$min-md) and (max-width:$max-md) {
                 transform: none;
