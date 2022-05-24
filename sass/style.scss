@@ -21,6 +21,10 @@ body {
     background: $bg-color;
 }
 
+main {
+    grid-area: main;
+}
+
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -29,15 +33,15 @@ body {
         "footer footer footer";
     gap: 1rem;
 
-    @media (min-width:541px) and (max-width:720px) {
+    @media (min-width:$min-md) and (max-width:$max-md) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "header header"
             "main main"
             "footer footer";
-        gap: 0.3%;
+        gap: 0.5rem;
     }
 
-    @media (min-width:320px) and (max-width:540px) {
+    @media (min-width:$min-xs) and (max-width:$max-xs) {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "header"
@@ -45,8 +49,4 @@ body {
             "footer";
         gap: 0.5rem;
     }
-}
-
-main {
-    grid-area: main;
 }

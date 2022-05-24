@@ -3,23 +3,21 @@
     width: 88vw;
     margin: 1.5rem;
     border-style: groove;
-    border-color: rgb(15, 58, 58);
-    border-radius: 30px;
-    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
-    background: rgba(185, 231, 185, 0.75);
-    background: linear-gradient(135deg, rgba(144, 185, 144, 0.4) 0%, rgba(185, 231, 185, 0.75) 50%, rgba(144, 185, 144, 0.4) 100%);
-    color: rgb(5, 15, 20);
+    border-color: $border-color-cards;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    background: $bg-color-card;
 
-    @media (min-width:721px) and (max-width:1230px) {
+    @media (min-width:$min-lg) and (max-width:$max-lg) {
         flex-direction: column;
     }
 
-    @media (min-width:541px) and (max-width:720px) {
+    @media (min-width:$min-md) and (max-width:$max-md) {
         flex-direction: column;
         width: 90vw;
     }
 
-    @media (min-width:320px) and (max-width:540px) {
+    @media (min-width:$min-xs) and (max-width:$max-xs) {
         width: 93vw;
         margin: 1rem 0.25rem 0.25rem 0.25rem;
     }
@@ -28,21 +26,21 @@
         width: 43vw;
         height: 40vh;
         margin: 1rem;
-        box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+        box-shadow: $box-shadow;
 
 
-        @media (min-width:721px) and (max-width:1230px) {
+        @media (min-width:$min-lg) and (max-width:$max-lg) {
             width: 68vw;
         }
 
-        @media (min-width:541px) and (max-width:720px) {
+        @media (min-width:$min-md) and (max-width:$max-md) {
             width: 65vw;
             height: 23vh;
             margin: 0.125rem;
             margin-top: 1rem;
         }
 
-        @media (min-width:320px) and (max-width:540px) {
+        @media (min-width:$min-xs) and (max-width:$max-xs) {
             width: 85vw;
             height: 25vh;
             margin: 1rem 0rem;
@@ -53,19 +51,18 @@
         width: 23vw;
         height: auto;
         margin: 1rem;
-        box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+        box-shadow: $box-shadow;
 
-
-        @media (min-width:721px) and (max-width:1230px) {
+        @media (min-width:$min-lg) and (max-width:$max-lg) {
             width: 35vw;
         }
 
-        @media (min-width:541px) and (max-width:720px) {
+        @media (min-width:$min-md) and (max-width:$max-md) {
             width: 55vw;
             margin: 1rem;
         }
 
-        @media (min-width:320px) and (max-width:540px) {
+        @media (min-width:$min-xs) and (max-width:$max-xs) {
             width: 70vw;
             margin: 1rem 0rem;
         }
@@ -75,15 +72,15 @@
         width: 33vw;
         height: auto;
 
-        @media (min-width:721px) and (max-width:1230px) {
+        @media (min-width:$min-lg) and (max-width:$max-lg) {
             width: 75vw;
         }
 
-        @media (min-width:541px) and (max-width:720px) {
+        @media (min-width:$min-md) and (max-width:$max-md) {
             width: 84vw;
         }
 
-        @media (min-width:320px) and (max-width:540px) {
+        @media (min-width:$min-xs) and (max-width:$max-xs) {
             width: 83vw;
         }
     }
@@ -96,20 +93,20 @@
         text-align: center;
         padding: 1rem;
         margin: 0.8rem;
-        color: rgb(16, 44, 25);
-        text-shadow: 1px 1px rgba(185, 231, 185, 1);
+        color: $color-title-card;
+        text-shadow: $textshadow-title-card;
 
-        @media (min-width:721px) and (max-width:1230px) {
+        @media (min-width:$min-lg) and (max-width:$max-lg) {
             font-size: 1.6rem;
         }
 
-        @media (min-width:541px) and (max-width:720px) {
+        @media (min-width:$min-md) and (max-width:$max-md) {
             font-size: 1.3rem;
             padding: 0.125rem;
             margin: 0.5rem;
         }
 
-        @media (min-width:320px) and (max-width:540px) {
+        @media (min-width:$min-xs) and (max-width:$max-xs) {
             font-size: 1.3rem;
             margin: 0.325rem;
             padding: 0.325rem;
@@ -122,22 +119,21 @@
         text-align: center;
         padding: 1rem;
         margin: 1rem;
-        border-radius: 30px;
+        border-radius: $border-radius;
         border-style: groove;
-        box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
-        border-color: rgb(15, 58, 58);
-        background: rgba(125, 190, 125, 1);
-        background: linear-gradient(135deg, rgba(50, 125, 60, 0.9) 0%, rgba(125, 190, 125, 1) 50%, rgba(50, 125, 60, 0.9) 100%);
-        color: rgb(5, 15, 20);
+        box-shadow: $box-shadow;
+        border-color: $border-color-cards;
+        background: $bg-color-description;
+        color: $color-black;
 
-        @media (min-width:541px) and (max-width:720px) {
+        @media (min-width:$min-md) and (max-width:$max-md) {
             width: 60vw;
             font-size: 1rem;
             padding: 0.25rem;
             margin: 0.5rem;
         }
 
-        @media (min-width:320px) and (max-width:540px) {
+        @media (min-width:$min-xs) and (max-width:$max-xs) {
             width: 70vw;
             font-size: 1rem;
             margin: 0.5rem;

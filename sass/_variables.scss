@@ -8,14 +8,51 @@ $font-p: 'Courgette', cursive;
 /* Colores */
 
 $bg-color: linear-gradient(90deg, rgba(18, 45, 20, 1) 0%, rgba(40, 100, 40, 1) 50%, rgba(18, 45, 20, 1) 100%);
-
-
+$bg-color-header: linear-gradient(180deg, rgba(15,33,33,1) 0%, rgba(15,60,60,1) 50%, rgba(15,33,33,1) 100%);
+$bg-color-footer: linear-gradient(180deg, rgba(14, 40, 40, 1) 0%, rgba(15, 58, 58, 1) 50%, rgba(14, 40, 40, 1) 100%);
+$bg-color-fa-insta: linear-gradient(135deg, rgba(81, 91, 212, 1) 0%, rgba(129, 52, 175, 1) 50%, rgb(172, 39, 99) 100%);
+$bg-color-card: linear-gradient(135deg, rgba(144, 185, 144, 0.4) 0%, rgba(185, 231, 185, 0.75) 50%, rgba(144, 185, 144, 0.4) 100%);
+$bg-color-sabores: linear-gradient(90deg, rgba(16, 55, 35, 1) 0%, rgba(50, 95, 50, 1) 50%, rgba(16, 55, 35, 1) 100%);
+$bg-color-description: linear-gradient(135deg, rgba(50, 125, 60, 0.9) 0%, rgba(125, 190, 125, 1) 50%, rgba(50, 125, 60, 0.9) 100%);
+$bg-color-label: rgba(14, 29, 31, 0.90);
+$bg-color-input: rgba(230, 230, 230, 0.70);
+$color-title-logo: rgb(227, 174, 108);
+$color-navlink-link: rgb(60, 148, 97);
+$color-navlink-active: rgb(57, 122, 119);
+$color-navlink-visited: rgb(62, 160, 103);
+$color-span: rgb(44, 121, 44);
+$color-fa-insta: rgb(13, 51, 13);
+$color-title: rgb(187, 134, 68);
+$color-title-card: rgb(16, 44, 25);
+$color-black: rgb(10, 20, 20);
+$border-color-header: 0.2rem solid rgb(15, 25, 25);
+$border-color-footer: 0.2rem solid rgb(11, 26, 27);
+$border-color-cards:  rgb(15, 58, 58);
+$box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+$textshadow-title: 1px 1px 1px black, 0 0 5px rgb(129, 99, 39), 0 0 3px rgb(46, 36, 16);
+$textshadow-title-logo: 1px 1px 1px black, 0 0 8px rgb(223, 190, 125), 0 0 4px rgba(199, 151, 56, 0.8);
+$textshadow-title-card: 1px 1px rgba(185, 231, 185, 1);
+$textshadow-link: 2px 1px 1px black, 0 0 10px rgb(71, 134, 130), 0 0 5px rgb(76, 165, 138);
+$textshadow-span: 1px 1px 1px black, 0 0 3px rgb(71, 134, 130), 0 0 1px rgb(76, 165, 138);
 
 /*Media Queries BreakPoints*/
 
-$min-xs: (min-width:320px);
-$max-xs: (max-width:540px);
-$min-md: (min-width:541px);
-$max-md: (max-width:720px);
-$min-lg: (min-width:721px);
-$max-lg: (max-width:1230px);
+$min-xs: 320px;
+$max-xs: 540px;
+$min-md: 541px;
+$max-md: 720px;
+$min-lg: 721px;
+$max-lg: 1200px;
+
+/*Otros*/
+
+$border-radius: 30px;
+$border-radius-fa: 50%;
+$border-radius-input: 10px;
+
+/* Transform Scales */
+
+$scale: scale(1.1);
+$scale-btn: scale(1.2);
+$transition: all 0.5s;
+$transition-img: all 1s;

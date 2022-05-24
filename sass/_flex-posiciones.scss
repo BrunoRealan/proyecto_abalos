@@ -9,14 +9,14 @@
     flex-direction: row;
     align-items: center;
 
-    @media (min-width:320px) and (max-width:540px) {
+    @media (min-width:$min-xs) and (max-width:$max-xs) {
         flex-direction: column;
     }
 }
 
 .reversa {
     flex-direction: row-reverse;
-    @media (min-width:320px) and (max-width:540px) {
+    @media (min-width:$min-xs) and (max-width:$max-xs) {
         flex-direction: column;
     }
 }

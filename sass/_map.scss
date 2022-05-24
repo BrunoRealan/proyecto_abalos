@@ -3,17 +3,17 @@
     width: 50vw;
     height: 50vh;
     margin: 2rem 0rem 4rem 0rem;
-    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+    box-shadow: $box-shadow;
 
-    @media (min-width:721px) and (max-width:1230px) {
+    @media (min-width:$min-lg) and (max-width:$max-lg) {
         width: 80vw;
     }
 
-    @media (min-width:541px) and (max-width:720px) {
+    @media (min-width:$min-md) and (max-width:$max-md) {
         width: 85vw;
     }
 
-    @media (min-width:320px) and (max-width:540px) {
+    @media (min-width:$min-xs) and (max-width:$max-xs) {
         width: 90vw;
     }
 }
