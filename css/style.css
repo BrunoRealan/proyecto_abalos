@@ -392,7 +392,7 @@ footer {
     @media (min-width: 320px) and (max-width: 540px) {
       .cards__img {
         width: 70vw;
-        margin: 1rem 0rem; } }
+        margin: 1rem 0; } }
   .cards__divDescription {
     width: 33vw;
     height: auto; }
@@ -506,7 +506,7 @@ footer {
   .sabores__div {
     border-radius: 30px;
     border-style: groove;
-    box-shadow: 5px 5px 12px 2px rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
     border-color: #0e3223;
     background: linear-gradient(90deg, #103723 0%, #325f32 50%, #103723 100%); }
   .sabores__name {
@@ -514,8 +514,8 @@ footer {
     font-size: 1.7rem;
     font-weight: bold;
     text-decoration: underline;
-    padding: 5px;
-    margin: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
     text-shadow: 1px 1px 1px black, 0 0 15px #dfbe7d, 0 0 8px #a87667;
     color: #5f1c07; }
   .sabores__img {

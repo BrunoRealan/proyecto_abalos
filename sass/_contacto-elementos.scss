@@ -58,18 +58,15 @@
     }
 
     #name {
-        border-radius: $border-radius-input;
-        background-color: $bg-color-input;
+        @include form-label;
     }
 
     #surname {
-        border-radius: $border-radius-input;
-        background-color: $bg-color-input;
+        @include form-label;
     }
 
     #email {
-        border-radius: $border-radius-input;
-        background-color: $bg-color-input;
+        @include form-label;
     }
 
     textarea {

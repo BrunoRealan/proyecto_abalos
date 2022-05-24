@@ -24,17 +24,21 @@ $color-span: rgb(44, 121, 44);
 $color-fa-insta: rgb(13, 51, 13);
 $color-title: rgb(187, 134, 68);
 $color-title-card: rgb(16, 44, 25);
+$color-title-saboresName: rgb(95, 28, 7);
 $color-black: rgb(10, 20, 20);
 $border-color-header: 0.2rem solid rgb(15, 25, 25);
 $border-color-footer: 0.2rem solid rgb(11, 26, 27);
 $border-color-cards:  rgb(15, 58, 58);
+$border-color-sabores: rgb(14, 50, 35);
+$border-color-saboresImg: rgb(88, 43, 13);
 $box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
 $textshadow-title: 1px 1px 1px black, 0 0 5px rgb(129, 99, 39), 0 0 3px rgb(46, 36, 16);
 $textshadow-title-logo: 1px 1px 1px black, 0 0 8px rgb(223, 190, 125), 0 0 4px rgba(199, 151, 56, 0.8);
 $textshadow-title-card: 1px 1px rgba(185, 231, 185, 1);
 $textshadow-link: 2px 1px 1px black, 0 0 10px rgb(71, 134, 130), 0 0 5px rgb(76, 165, 138);
 $textshadow-span: 1px 1px 1px black, 0 0 3px rgb(71, 134, 130), 0 0 1px rgb(76, 165, 138);
-
+$textshadow-title-sabores-name: 1px 1px 1px black, 0 0 15px rgb(223, 190, 125), 0 0 8px rgb(168, 118, 103);
+$textshadow-title-sabores-li: 3px 3px 2px rgb(0, 0, 0), 0 0 5px rgb(43, 34, 18), 0 0 2px rgb(20, 17, 12);
 /*Media Queries BreakPoints*/
 
 $min-xs: 320px;

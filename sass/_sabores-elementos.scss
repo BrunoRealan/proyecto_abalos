@@ -24,10 +24,10 @@
     }
 
     &__div {
-        border-radius: 30px;
+        border-radius: $border-radius;
         border-style: groove;
-        box-shadow: 5px 5px 12px 2px rgba(0, 0, 0, 0.9);
-        border-color: rgb(14, 50, 35);
+        box-shadow: $box-shadow;
+        border-color: $border-color-sabores;
         background: $bg-color-sabores;
     }
 
@@ -36,20 +36,20 @@
         font-size: 1.7rem;
         font-weight: bold;
         text-decoration: underline;
-        padding: 5px;
-        margin: 5px;
-        text-shadow: 1px 1px 1px black, 0 0 15px rgb(223, 190, 125), 00 0 8px rgb(168, 118, 103);
-        color: rgb(95, 28, 7);
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-shadow: $textshadow-title-sabores-name;
+        color: $color-title-saboresName;
     }
 
     &__img {
         width: 9vw;
         height: auto;
         margin: 1rem;
-        border-radius: 30px;
+        border-radius: $border-radius;
         border-style: groove;
-        border-color: rgb(88, 43, 13);
-        box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.85);
+        border-color: $border-color-saboresImg;
+        box-shadow: $box-shadow;
 
         &:hover {
             transform: $scale;
@@ -92,8 +92,8 @@
             margin: 0.125rem;
             text-align: center;
             list-style-type: none;
-            color: rgb(187, 134, 68);
-            text-shadow: 3px 3px 2px rgb(0, 0, 0), 0 0 5px rgb(43, 34, 18), 0 0 2px rgb(20, 17, 12);
+            color: $color-title;
+            text-shadow: $textshadow-title-sabores-li;
         }
     }
 }
