@@ -1,11 +1,11 @@
 .sabores {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
     margin: 2rem;
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
-        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         margin: 1rem;
     }
@@ -23,10 +23,35 @@
     }
 
     &__div {
-        border-color: $border-color-sabores;
-        background: $bg-color-sabores;
+        width: 25vw;
+        @include outline-sabores;
         @include outline;
         @include columnaCentrada;
+
+        @media (min-width: $min-md) and (max-width: $max-md) {
+            width: 43vw;
+        }
+
+        @media (min-width: $min-xs) and (max-width: $max-xs) {
+            width: 70vw;
+        }
+    }
+
+    &__divDos {
+        width: 25vw;
+        @include outline-sabores;
+        @include outline;
+        @include columnaCentrada;
+
+        @media (min-width: $min-md) and (max-width: $max-md) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            width: 43vw;
+        }
+
+        @media (min-width: $min-xs) and (max-width: $max-xs) {
+            width: 70vw;
+        }
     }
 
     &__name {
@@ -40,7 +65,7 @@
     }
 
     &__img {
-        width: 9vw;
+        width: 10rem;
         height: auto;
         margin: 1rem;
         border-color: $border-color-saboresImg;
@@ -63,11 +88,11 @@
         }
 
         @media (min-width:$min-lg) and (max-width:$max-lg) {
-            width: 15vw;
+            width: 7rem;
         }
 
         @media (min-width:$min-md) and (max-width:$max-md) {
-            width: 25vw;
+            width: 18vw;
         }
 
         @media (min-width:$min-xs) and (max-width:$max-xs) {
@@ -88,6 +113,18 @@
             list-style-type: none;
             color: $color-title;
             text-shadow: $textshadow-sabores-li-p;
+
+            @media (min-width:$min-lg) and (max-width:$max-lg) {
+                font-size: 1rem;
+            }
+
+            @media (min-width:$min-md) and (max-width:$max-md) {
+                font-size: 1rem;
+            }
+
+            @media (min-width:$min-xs) and (max-width:$max-xs) {
+                font-size: 1rem;
+            }
         }
     }
 }

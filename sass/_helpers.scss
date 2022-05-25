@@ -52,6 +52,10 @@
     transition: $transition;
 }
 
+@mixin outline-sabores {
+    border-color: $border-color-sabores;
+    background: $bg-color-sabores;
+}
 
 @mixin outline-label {
     border-radius: $border-radius-input;
