@@ -56,12 +56,16 @@
 
 .p {
     font-family: $font-p;
-    font-size: 1.2em;
+    font-size: 1.1rem;
     text-align: center;
     list-style-type: none;
     color: $color-white;
     text-shadow: $textshadow-sabores-li-p;
     @include margin-text-min;
+
+    @media (min-width:$min-lg) and (max-width:$max-lg) {
+        @include queries-p;
+    }
 
     @media (min-width:$min-md) and (max-width:$max-md) {
         @include queries-p;
@@ -73,5 +77,9 @@
 
     &__title {
         font-size: 1.5rem;
+
+        @media (min-width:$min-xs) and (max-width:$max-lg) {
+            font-size: 1.3rem;
+        }
     }
 }

@@ -322,13 +322,18 @@ footer {
 
 .p {
   font-family: "Courgette", cursive;
-  font-size: 1.2em;
+  font-size: 1.1rem;
   text-align: center;
   list-style-type: none;
   color: #e5e5e5;
   text-shadow: 3px 3px 2px black, 0 0 5px #2b2212, 0 0 2px #14110c;
   padding: 0.125rem;
   margin: 0.125rem; }
+  @media (min-width: 721px) and (max-width: 1200px) {
+    .p {
+      font-size: 1rem;
+      margin: 1rem;
+      padding: 0.125rem; } }
   @media (min-width: 541px) and (max-width: 720px) {
     .p {
       font-size: 1rem;
@@ -341,6 +346,9 @@ footer {
       padding: 0.125rem; } }
   .p__title {
     font-size: 1.5rem; }
+    @media (min-width: 320px) and (max-width: 1200px) {
+      .p__title {
+        font-size: 1.3rem; } }
 
 .btn {
   font-family: "Mouse Memoirs", sans-serif;
@@ -522,12 +530,13 @@ footer {
   margin: 2rem; }
   @media (min-width: 721px) and (max-width: 1200px) {
     .sabores {
-      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.8rem;
       margin: 1rem; } }
   @media (min-width: 541px) and (max-width: 720px) {
     .sabores {
       grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
+      gap: 2rem;
       margin: 1rem; } }
   @media (min-width: 320px) and (max-width: 540px) {
     .sabores {
@@ -544,6 +553,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media (min-width: 721px) and (max-width: 1200px) {
+      .sabores__div {
+        width: 35vw; } }
     @media (min-width: 541px) and (max-width: 720px) {
       .sabores__div {
         width: 43vw; } }
@@ -560,6 +572,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media (min-width: 721px) and (max-width: 1200px) {
+      .sabores__divDos {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 35vw; } }
     @media (min-width: 541px) and (max-width: 720px) {
       .sabores__divDos {
         grid-column-start: 1;
@@ -718,18 +735,21 @@ footer {
       .contacto__form {
         width: 85vw; } }
   .contacto__label {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 1.8rem; }
+    margin-bottom: 2rem; }
   .contacto__text {
     margin-bottom: 0.6rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
   .contacto label {
+    width: 13vw;
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 1.1rem;
     font-weight: bold;
-    margin: 0.5rem;
+    margin: 1.2rem 0.5rem 0.3rem;
     padding: 0.25rem 0.8rem 0.25rem 0.8rem;
     border-radius: 30px;
     background-color: rgba(14, 29, 31, 0.9);

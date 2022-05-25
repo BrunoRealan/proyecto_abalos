@@ -100,3 +100,8 @@
     width: 80vw;
     height: auto;
 }
+
+@mixin grid-column-divDos {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
