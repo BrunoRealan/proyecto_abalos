@@ -61,57 +61,69 @@
         </header>
         <!-- Empieza Main -->
         <main>
-            <section class="carousel m-2 m-md-3 m-xl-4">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+            <section class="row">
+                <div class="col-md-6 col-lg-8 col-xl-10">
+                    <div class="carousel m-2 m-md-3 m-xl-4">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="resources/pic1_900x584.jpg" class="d-block w-100"
+                                        alt="Cerveza servida en un vaso.">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4 class="p p__title">Gozate con nuestra variedad de Cervezas.</h4>
+                                        <p class="p">Tenemos una multiplisidad de aromas y sabores para degustar a
+                                            temperatura
+                                            ideal,
+                                            servidas en mano de sus mismos creadores a los que podrás consultar en busca
+                                            de
+                                            la tuya; la ideal.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="resources/pic2_900x584.jpg" class="d-block w-100"
+                                        alt="Persona tomando Cerveza.">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4 class="p p__title">En un hambiente cálido y agradable.</h4>
+                                        <p class="p">Brindamos un lugar amigable, seguro y acogedor. Donde podrás
+                                            descansar
+                                            luego de una larga jornada o simplemente compartir junto a otras personas
+                                            nuestras increíbles gamas de sabores.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="resources/pic3_900x584.jpg" class="d-block w-100"
+                                        alt="Foto de banda en vivo.">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4 class="p p__title">Disfrutando de una banda en vivo.</h4>
+                                        <p class="p">Porque pensamos que sin ella la vida sería un error es que nos
+                                            gusta
+                                            apreciar la
+                                            buena música, y porque no, con la presencia de diferentes artistas
+                                            encargados
+                                            de hacernos pasar un momento divertido.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="resources/pic1_900x584.jpg" class="d-block w-100"
-                                alt="Cerveza servida en un vaso.">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h4 class="p p__title">Gozate con nuestra variedad de Cervezas.</h4>
-                                <p class="p">Tenemos una multiplisidad de aromas y sabores para degustar a temperatura
-                                    ideal,
-                                    servidas en mano de sus mismos creadores a los que podrás consultar en busca de
-                                    la tuya; la ideal.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="resources/pic2_900x584.jpg" class="d-block w-100" alt="Persona tomando Cerveza.">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h4 class="p p__title">En un hambiente cálido y agradable.</h4>
-                                <p class="p">Brindamos un lugar amigable, seguro y acogedor. Donde podrás descansar
-                                    luego de una larga jornada o simplemente compartir junto a otras personas
-                                    nuestras increíbles gamas de sabores.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="resources/pic3_900x584.jpg" class="d-block w-100" alt="Foto de banda en vivo.">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h4 class="p p__title">Disfrutando de una banda en vivo.</h4>
-                                <p class="p">Porque pensamos que sin ella la vida sería un error es que nos gusta apreciar la
-                                    buena música, y porque no, con la presencia de diferentes artistas encargados
-                                    de hacernos pasar un momento divertido.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </section>
             <section class="columnaCentrada">
@@ -144,7 +156,8 @@
                             lo necesario para la creación de una buena cerveza propia, con el objetivo de realizar
                             nuestro
                             sueño de
-                            transformar la casa en una "de cervezas", teniendo encuentros memorables para todas las personas
+                            transformar la casa en una "de cervezas", teniendo encuentros memorables para todas las
+                            personas
                             amantes de éste hermoso y burbujeante nectar concebido a partir de la fermentacion de
                             cebada, lúpulo, levadura y agua.</p>
                         <a href="pages/quienesSomos.html">
@@ -152,23 +165,24 @@
                         </a>
                     </div>
                 </div>
-            </section>
-        </main>
-        <!-- Empieza Footer -->
-        <footer class="footer">
-            <div class="footer__name">
-                <a class="footer__a" href="index.html">
-                    <h2 class="footer__title">Ábalos</h2>
-                </a>
-                <h2 class="footer__subtitle">Casa de Cervezas</h2>
-            </div>
-            <span class="footer__span">Beber con moderación. Prohibida su venta a menores de 18 años.
-                Todos los Derechos
-                reservados.</span>
-            <div class="footer__redes row">
-                <a href="https://www.instagram.com/abaloscasadecervezas/" class="fa fa-instagram"></a>
-            </div>
-        </footer>
+    </div>
+    </section>
+    </main>
+    <!-- Empieza Footer -->
+    <footer class="footer">
+        <div class="footer__name">
+            <a class="footer__a" href="index.html">
+                <h2 class="footer__title">Ábalos</h2>
+            </a>
+            <h2 class="footer__subtitle">Casa de Cervezas</h2>
+        </div>
+        <span class="footer__span">Beber con moderación. Prohibida su venta a menores de 18 años.
+            Todos los Derechos
+            reservados.</span>
+        <div class="footer__redes row">
+            <a href="https://www.instagram.com/abaloscasadecervezas/" class="fa fa-instagram"></a>
+        </div>
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
