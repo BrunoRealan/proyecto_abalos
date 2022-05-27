@@ -23,7 +23,7 @@
     &__video {
         width: 43vw;
         height: 40vh;
-        margin: 1rem;
+        margin: 2rem;
         box-shadow: $box-shadow;
 
 
@@ -34,21 +34,18 @@
         @media (min-width:$min-md) and (max-width:$max-md) {
             width: 65vw;
             height: 23vh;
-            margin: 0.125rem;
-            margin-top: 1rem;
         }
 
         @media (min-width:$min-xs) and (max-width:$max-xs) {
             width: 85vw;
             height: 25vh;
-            margin: 1rem 0rem;
         }
     }
 
     &__img {
         width: 20vw;
         height: auto;
-        margin: 1rem;
+        margin: 2rem;
         box-shadow: $box-shadow;
 
         @media (min-width:$min-lg) and (max-width:$max-lg) {
@@ -57,12 +54,10 @@
 
         @media (min-width:$min-md) and (max-width:$max-md) {
             width: 55vw;
-            margin: 1rem;
         }
 
         @media (min-width:$min-xs) and (max-width:$max-xs) {
             width: 70vw;
-            margin: 1rem 0;
         }
     }
 
