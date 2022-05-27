@@ -65,12 +65,24 @@
 
     &__name {
         font-family: $font-principal;
-        font-size: 1.7rem;
+        font-size: 2rem;
         font-weight: bold;
         text-decoration: underline;
-        text-shadow: $textshadow-title-sabores-name;
-        color: $color-title-saboresName;
-        @include margin-text-lg;
+        text-shadow: $textshadow-title;
+        color: $color-title;
+        @include margin-text-med;
+
+        @media (min-width:$min-lg) and (max-width:$max-lg) {
+            font-size: 1.6rem;
+        }
+
+        @media (min-width:$min-md) and (max-width:$max-md) {
+            font-size: 1.6rem;
+        }
+
+        @media (min-width:$min-xs) and (max-width:$max-xs) {
+            font-size: 1.6rem;
+        }
     }
 
     &__img {
@@ -120,7 +132,7 @@
             margin: 0.125rem;
             text-align: center;
             list-style-type: none;
-            color: $color-title;
+            color: $color-title-logo;
             text-shadow: $textshadow-sabores-li-p;
 
             @media (min-width:$min-lg) and (max-width:$max-lg) {

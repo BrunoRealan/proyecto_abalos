@@ -318,8 +318,8 @@ footer {
   list-style-type: none;
   color: #e5e5e5;
   text-shadow: 3px 3px 2px black, 0 0 5px #2b2212, 0 0 2px #14110c;
-  padding: 0.125rem;
-  margin: 0.125rem; }
+  margin: 0.5rem;
+  padding: 0.5rem; }
   @media (min-width: 721px) and (max-width: 1200px) {
     .p {
       font-size: 1rem;
@@ -369,7 +369,7 @@ footer {
   margin: 2rem;
   border-color: #0f3a3a;
   box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9);
-  background: linear-gradient(135deg, rgba(144, 185, 144, 0.4) 0%, rgba(185, 231, 185, 0.75) 50%, rgba(144, 185, 144, 0.4) 100%);
+  background: linear-gradient(135deg, rgba(144, 185, 144, 0.55) 0%, rgba(185, 231, 185, 0.7) 50%, rgba(144, 185, 144, 0.55) 100%);
   border-style: outset;
   border-radius: 30px;
   box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9); }
@@ -533,7 +533,7 @@ footer {
   .sabores__div {
     width: 25vw;
     border-color: #0e3223;
-    background: linear-gradient(90deg, #103723 0%, #325f32 50%, #103723 100%);
+    background: linear-gradient(90deg, #1a462d 0%, #325f32 50%, #1a462d 100%);
     border-style: outset;
     border-radius: 30px;
     box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9);
@@ -552,7 +552,7 @@ footer {
   .sabores__divDos {
     width: 25vw;
     border-color: #0e3223;
-    background: linear-gradient(90deg, #103723 0%, #325f32 50%, #103723 100%);
+    background: linear-gradient(90deg, #1a462d 0%, #325f32 50%, #1a462d 100%);
     border-style: outset;
     border-radius: 30px;
     box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9);
@@ -574,13 +574,22 @@ footer {
         width: 70vw; } }
   .sabores__name {
     font-family: "Mouse Memoirs", sans-serif;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: underline;
-    text-shadow: 1px 1px 1px black, 0 0 15px #dfbe7d, 0 0 8px #a87667;
-    color: #5f1c07;
-    margin: 1rem;
-    padding: 1rem; }
+    text-shadow: 1px 1px 1px black, 0 0 5px #816327, 0 0 3px #2e2410;
+    color: #bb8644;
+    margin: 0.5rem;
+    padding: 0.5rem; }
+    @media (min-width: 721px) and (max-width: 1200px) {
+      .sabores__name {
+        font-size: 1.6rem; } }
+    @media (min-width: 541px) and (max-width: 720px) {
+      .sabores__name {
+        font-size: 1.6rem; } }
+    @media (min-width: 320px) and (max-width: 540px) {
+      .sabores__name {
+        font-size: 1.6rem; } }
   .sabores__img {
     width: 12rem;
     height: auto;
@@ -620,7 +629,7 @@ footer {
       margin: 0.125rem;
       text-align: center;
       list-style-type: none;
-      color: #bb8644;
+      color: #e3ae6c;
       text-shadow: 3px 3px 2px black, 0 0 5px #2b2212, 0 0 2px #14110c; }
       @media (min-width: 721px) and (max-width: 1200px) {
         .sabores__ul li {
@@ -784,7 +793,7 @@ footer {
   padding: 0; }
 
 body {
-  background: linear-gradient(90deg, #122d14 0%, #286428 50%, #122d14 100%); }
+  background: linear-gradient(90deg, #264b28 0%, #467846 50%, #264b28 100%); }
 
 main {
   grid-area: main;

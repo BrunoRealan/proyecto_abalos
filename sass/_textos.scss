@@ -61,7 +61,7 @@
     list-style-type: none;
     color: $color-white;
     text-shadow: $textshadow-sabores-li-p;
-    @include margin-text-min;
+    @include margin-text-med;
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
         @include queries-p;
