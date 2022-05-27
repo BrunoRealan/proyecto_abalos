@@ -70,14 +70,14 @@
         text-decoration: underline;
         text-shadow: $textshadow-title-sabores-name;
         color: $color-title-saboresName;
-        @include margin-text-min;
+        @include margin-text-lg;
     }
 
     &__img {
-        width: 10rem;
+        width: 12rem;
         height: auto;
-        margin: 1rem;
-        border-color: $border-color-saboresImg;
+        margin: 0.5rem;
+        border-color: $border-color-sabores;
         @include outline;
 
         &:hover {
@@ -97,15 +97,15 @@
         }
 
         @media (min-width:$min-lg) and (max-width:$max-lg) {
-            width: 7rem;
+            width: 10rem;
         }
 
         @media (min-width:$min-md) and (max-width:$max-md) {
-            width: 18vw;
+            width: 10rem;
         }
 
         @media (min-width:$min-xs) and (max-width:$max-xs) {
-            width: 33vw;
+            width: 10rem;
         }
     }
 
@@ -116,7 +116,7 @@
         li {
             font-family: $font-p;
             font-size: 1.1rem;
-            padding: 1rem;
+            padding: 0.8rem;
             margin: 0.125rem;
             text-align: center;
             list-style-type: none;

@@ -579,13 +579,13 @@ footer {
     text-decoration: underline;
     text-shadow: 1px 1px 1px black, 0 0 15px #dfbe7d, 0 0 8px #a87667;
     color: #5f1c07;
-    padding: 0.125rem;
-    margin: 0.125rem; }
-  .sabores__img {
-    width: 10rem;
-    height: auto;
     margin: 1rem;
-    border-color: #582b0d;
+    padding: 1rem; }
+  .sabores__img {
+    width: 12rem;
+    height: auto;
+    margin: 0.5rem;
+    border-color: #0e3223;
     border-style: outset;
     border-radius: 30px;
     box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9); }
@@ -603,20 +603,20 @@ footer {
           transform: none; } }
     @media (min-width: 721px) and (max-width: 1200px) {
       .sabores__img {
-        width: 7rem; } }
+        width: 10rem; } }
     @media (min-width: 541px) and (max-width: 720px) {
       .sabores__img {
-        width: 18vw; } }
+        width: 10rem; } }
     @media (min-width: 320px) and (max-width: 540px) {
       .sabores__img {
-        width: 33vw; } }
+        width: 10rem; } }
   .sabores__ul {
     margin: 1rem;
     padding: 0.125rem; }
     .sabores__ul li {
       font-family: "Courgette", cursive;
       font-size: 1.1rem;
-      padding: 1rem;
+      padding: 0.8rem;
       margin: 0.125rem;
       text-align: center;
       list-style-type: none;
