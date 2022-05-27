@@ -1,7 +1,7 @@
 .cards {
     justify-content: space-evenly;
     width: 88vw;
-    margin: 1.5rem;
+    margin: 2rem;
     border-color: $border-color-description;
     box-shadow: $box-shadow;    background: $bg-color-card;
     @include outline;
@@ -17,7 +17,7 @@
 
     @media (min-width:$min-xs) and (max-width:$max-xs) {
         width: 93vw;
-        margin: 1rem 0.25rem 0.25rem 0.25rem;
+        margin: 2rem 0.25rem;
     }
 
     &__video {
@@ -46,7 +46,7 @@
     }
 
     &__img {
-        width: 23vw;
+        width: 20vw;
         height: auto;
         margin: 1rem;
         box-shadow: $box-shadow;

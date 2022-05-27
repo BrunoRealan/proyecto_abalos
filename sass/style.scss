@@ -24,7 +24,7 @@ body {
 
 main {
     grid-area: main;
-    @include columnaCentrada
+    @include columnaCentrada;
 }
 
 .gridContainer {
@@ -33,14 +33,12 @@ main {
     grid-template-areas: "header header header"
         "main main main"
         "footer footer footer";
-    gap: 1rem;
 
     @media (min-width:$min-md) and (max-width:$max-md) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "header header"
             "main main"
             "footer footer";
-        gap: 0.5rem;
     }
 
     @media (min-width:$min-xs) and (max-width:$max-xs) {
@@ -48,6 +46,5 @@ main {
         grid-template-areas: "header"
             "main"
             "footer";
-        gap: 0.5rem;
     }
 }
