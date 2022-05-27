@@ -29,6 +29,10 @@ footer {
             justify-self: center;
             @include columnaCentrada;
 
+            @media (min-width:$min-md) and (max-width:$max-md) {
+                margin-bottom: 1rem;
+            }
+            
             @media (min-width:$min-xs) and (max-width:$max-xs) {
                 margin-bottom: 1rem;
             }
@@ -101,10 +105,10 @@ footer {
     }
 
     .fa {
-        font-size: 2rem;
-        width: 4rem;
-        height: 4rem;
-        margin: 0.3rem 0.25rem;
+        font-size: 1.6rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0.5rem 0.5rem;
         padding: 0.5rem;
         text-decoration: none;
         @include text-align-justify-center;
@@ -114,22 +118,8 @@ footer {
             opacity: 0.55;
         }
 
-        @media (min-width:$min-lg) and (max-width:$max-lg) {
-            font-size: 1.6rem;
-            width: 3.2rem;
-            height: 3.2rem;
-        }
-
-        @media (min-width:$min-md) and (max-width:$max-md) {
-            font-size: 1.6rem;
-            padding: 0.5rem;
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-
         @media (min-width:$min-xs) and (max-width:$max-xs) {
             font-size: 1.5rem;
-            padding: 0.5rem;
             width: 2.2rem;
             height: 2.2rem;
         }

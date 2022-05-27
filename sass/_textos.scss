@@ -38,7 +38,7 @@
     border-color: $border-color-description;
     background: $bg-color-description;
     color: $color-black;
-    @include margin-text-min;
+    @include margin-text-lg;
     @include outline;
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
