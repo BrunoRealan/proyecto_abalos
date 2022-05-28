@@ -548,30 +548,7 @@ footer {
         width: 43vw; } }
     @media (min-width: 320px) and (max-width: 540px) {
       .sabores__div {
-        width: 70vw; } }
-  .sabores__divDos {
-    width: 25vw;
-    border-color: #0e3223;
-    background: linear-gradient(90deg, #1a462d 0%, #325f32 50%, #1a462d 100%);
-    border-style: outset;
-    border-radius: 30px;
-    box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9);
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    @media (min-width: 721px) and (max-width: 1200px) {
-      .sabores__divDos {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        width: 35vw; } }
-    @media (min-width: 541px) and (max-width: 720px) {
-      .sabores__divDos {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        width: 43vw; } }
-    @media (min-width: 320px) and (max-width: 540px) {
-      .sabores__divDos {
-        width: 70vw; } }
+        width: 78vw; } }
   .sabores__name {
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 2rem;
