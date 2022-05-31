@@ -30,13 +30,12 @@
 .div {
     flex-wrap: wrap;
     justify-content: center;
-    width: 40vw;
-    margin: 2rem;
-    padding: 1rem;
+    width: 45vw;
     border-color: $border-color-description;
     box-shadow: $box-shadow;
     background: $bg-color-card;
     @include display-flex-row;
+    @include margin-text-lg;
     @include outline;
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
@@ -54,7 +53,7 @@
     &__description {
         font-family: $font-principal;
         font-size: 1.25rem;
-        width: 35vw;
+        width: 40vw;
         text-align: center;
         border-color: $border-color-description;
         background: $bg-color-description;
@@ -68,10 +67,12 @@
 
         @media (min-width:$min-md) and (max-width:$max-md) {
             @include queries-descritpion;
+            @include margin-text-med
         }
 
         @media (min-width:$min-xs) and (max-width:$max-xs) {
             @include queries-descritpion;
+            @include margin-text-med;
         }
     }
 }

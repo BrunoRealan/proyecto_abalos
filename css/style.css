@@ -282,37 +282,37 @@ footer {
 .div {
   flex-wrap: wrap;
   justify-content: center;
-  width: 40vw;
-  margin: 2rem;
-  padding: 1rem;
+  width: 45vw;
   border-color: #0f3a3a;
   box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9);
   background: linear-gradient(135deg, rgba(144, 185, 144, 0.55) 0%, rgba(185, 231, 185, 0.7) 50%, rgba(144, 185, 144, 0.55) 100%);
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 1rem;
+  padding: 1rem;
   border-style: outset;
   border-radius: 30px;
   box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9); }
   @media (min-width: 721px) and (max-width: 1200px) {
     .div {
       font-size: 1rem;
-      width: 80vw;
+      width: 85vw;
       height: auto; } }
   @media (min-width: 541px) and (max-width: 720px) {
     .div {
       font-size: 1rem;
-      width: 80vw;
+      width: 85vw;
       height: auto; } }
   @media (min-width: 320px) and (max-width: 540px) {
     .div {
       font-size: 1rem;
-      width: 80vw;
+      width: 85vw;
       height: auto; } }
   .div__description {
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 1.25rem;
-    width: 35vw;
+    width: 40vw;
     text-align: center;
     border-color: #0f3a3a;
     background: linear-gradient(135deg, rgba(50, 125, 60, 0.95) 0%, #7dbe7d 50%, rgba(50, 125, 60, 0.95) 100%);
@@ -328,13 +328,17 @@ footer {
     @media (min-width: 541px) and (max-width: 720px) {
       .div__description {
         font-size: 1rem;
-        width: 80vw;
-        height: auto; } }
+        width: 85vw;
+        height: auto;
+        margin: 0.5rem;
+        padding: 0.5rem; } }
     @media (min-width: 320px) and (max-width: 540px) {
       .div__description {
         font-size: 1rem;
-        width: 80vw;
-        height: auto; } }
+        width: 85vw;
+        height: auto;
+        margin: 0.5rem;
+        padding: 0.5rem; } }
 
 .p {
   font-family: "Courgette", cursive;
