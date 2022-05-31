@@ -33,9 +33,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    @media (min-width: 320px) and (max-width: 540px) {
-      header .header__watermark {
-        flex-direction: column; } }
     @media (min-width: 541px) and (max-width: 720px) {
       header .header__watermark {
         justify-content: center; } }

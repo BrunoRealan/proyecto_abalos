@@ -14,7 +14,7 @@ header {
 
         &__watermark {
             gap: 1rem;
-            @include filaCentrada;
+            @include display-flex-row;
 
             @media (min-width:$min-md) and (max-width:$max-md) {
                 justify-content: center;
