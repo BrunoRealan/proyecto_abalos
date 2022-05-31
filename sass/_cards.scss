@@ -3,7 +3,8 @@
     width: 88vw;
     margin: 2rem;
     border-color: $border-color-description;
-    box-shadow: $box-shadow;    background: $bg-color-card;
+    box-shadow: $box-shadow;    
+    background: $bg-color-card;
     @include outline;
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
@@ -87,7 +88,7 @@
         text-align: center;
         color: $color-title-card;
         text-shadow: $textshadow-title-card;
-        @include margin-text-lg;
+        @include margin-text-med;
 
         @media (min-width:$min-lg) and (max-width:$max-lg) {
             font-size: 1.6rem;

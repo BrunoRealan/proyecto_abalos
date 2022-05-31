@@ -13,10 +13,8 @@ header {
         }
 
         &__watermark {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
             gap: 1rem;
+            @include filaCentrada;
 
             @media (min-width:$min-md) and (max-width:$max-md) {
                 justify-content: center;
@@ -58,8 +56,7 @@ header {
             font-size: 1.9rem;
             padding: 0.35rem;
             padding-bottom: 0;
-            text-shadow: $textshadow-title-logo;
-            color: $color-title-logo;
+            @include color-textshadow-logo;
 
             @media (min-width:$min-md) and (max-width:$max-md) {
                 font-size: 1.6rem;
@@ -77,8 +74,7 @@ header {
             font-family: $font-subtitle;
             padding: 0.125rem;
             margin-bottom: 0;
-            text-shadow: $textshadow-title-logo;
-            color: $color-title-logo;
+            @include color-textshadow-logo;
 
             @media (min-width:$min-md) and (max-width:$max-md) {
                 font-size: 1.2rem;
@@ -96,8 +92,7 @@ header {
     font-size: 1.6rem;
 
     &:hover {
-        transform: $scale-btn;
-        transition: $transition;
+        @include scale-hover-fast;
     }
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
@@ -132,8 +127,7 @@ header {
     }
 
     &:hover {
-        color: $color-title-logo;
-        text-shadow: $textshadow-title-logo;
+        @include color-textshadow-logo;
         transition: $transition;
     }
 }

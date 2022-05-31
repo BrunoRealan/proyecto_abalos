@@ -13,6 +13,11 @@
         flex-direction: column;
     }
 }
+@mixin display-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 @mixin reversa {
     flex-direction: row-reverse;
@@ -27,6 +32,13 @@
     text-shadow: $textshadow-title-logo;
 }
 
+@mixin color-textshadow-title {
+    color: $color-title;
+    background-image: $bg-color-title;
+    border: $border-color-title;
+    text-shadow: $textshadow-title;
+}
+
 @mixin margin-text-min {
     padding: 0.125rem;
     margin: 0.125rem;
@@ -38,7 +50,7 @@
 }
 
 @mixin margin-text-lg {
-    margin: 1rem;
+    margin: 2rem;
     padding: 1rem;
 }
 

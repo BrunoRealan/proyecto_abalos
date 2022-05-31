@@ -11,10 +11,7 @@
         height: auto;
         padding: 0.5rem;
         margin: 1rem 0;
-        border: $border-color-title;
-        text-shadow: $textshadow-title;
-        background-image: $bg-color-title;
-        color: $color-title;
+        @include color-textshadow-title;
         @include outline;
 
         @media (min-width:$min-md) and (max-width:$max-md) {
@@ -30,19 +27,18 @@
     }
 }
 
-.description {
-    font-family: $font-principal;
-    font-size: 1.25rem;
-    width: 40vw;
-    text-align: center;
+.div {
+    @include display-flex-row;
+    justify-content: center;
+    width: 45vw;
+    margin: 2rem;
     border-color: $border-color-description;
-    background: $bg-color-description;
-    color: $color-black;
-    @include margin-text-lg;
+    box-shadow: $box-shadow;
+    background: $bg-color-card;
     @include outline;
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
-        width: 80vw;
+        @include queries-descritpion;
     }
 
     @media (min-width:$min-md) and (max-width:$max-md) {
@@ -52,7 +48,32 @@
     @media (min-width:$min-xs) and (max-width:$max-xs) {
         @include queries-descritpion;
     }
+
+    &__description {
+        font-family: $font-principal;
+        font-size: 1.25rem;
+        width: 40vw;
+        text-align: center;
+        border-color: $border-color-description;
+        background: $bg-color-description;
+        color: $color-black;
+        @include margin-text-lg;
+        @include outline;
+
+        @media (min-width:$min-lg) and (max-width:$max-lg) {
+            width: 80vw;
+        }
+
+        @media (min-width:$min-md) and (max-width:$max-md) {
+            @include queries-descritpion;
+        }
+
+        @media (min-width:$min-xs) and (max-width:$max-xs) {
+            @include queries-descritpion;
+        }
+    }
 }
+
 
 .p {
     font-family: $font-p;
@@ -61,7 +82,7 @@
     list-style-type: none;
     color: $color-white;
     text-shadow: $textshadow-sabores-li-p;
-    @include margin-text-med;
+    @include margin-text-min;
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
         @include queries-p;

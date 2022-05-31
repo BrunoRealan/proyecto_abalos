@@ -5,8 +5,7 @@
     box-shadow: $box-shadow;
 
     &:hover {
-        transform: $scale-btn;
-        transition: $transition;
+        @include scale-hover-fast;
 
         @media (min-width:$min-xs) and (max-width:$max-xs) {
             transform: none;
