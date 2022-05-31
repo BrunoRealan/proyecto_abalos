@@ -28,13 +28,15 @@
 }
 
 .div {
-    @include display-flex-row;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 45vw;
+    width: 40vw;
     margin: 2rem;
+    padding: 1rem;
     border-color: $border-color-description;
     box-shadow: $box-shadow;
     background: $bg-color-card;
+    @include display-flex-row;
     @include outline;
 
     @media (min-width:$min-lg) and (max-width:$max-lg) {
@@ -52,7 +54,7 @@
     &__description {
         font-family: $font-principal;
         font-size: 1.25rem;
-        width: 40vw;
+        width: 35vw;
         text-align: center;
         border-color: $border-color-description;
         background: $bg-color-description;
