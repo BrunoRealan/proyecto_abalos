@@ -529,10 +529,10 @@ footer {
         width: 75vw; } }
     @media (min-width: 541px) and (max-width: 720px) {
       .somos__img {
-        width: 80vw; } }
+        width: 85vw; } }
     @media (min-width: 320px) and (max-width: 540px) {
       .somos__img {
-        width: 90vw;
+        width: 93vw;
         margin: 0.5rem; } }
 
 .sabores {
@@ -626,7 +626,7 @@ footer {
     padding: 0.125rem; }
     .sabores__ul li {
       font-family: "Courgette", cursive;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       padding: 0.8rem;
       margin: 0.125rem;
       text-align: center;
@@ -686,7 +686,7 @@ footer {
         margin: 1rem; } }
     @media (min-width: 320px) and (max-width: 540px) {
       .membresia__img {
-        width: 85vw;
+        width: 90vw;
         height: auto;
         margin: 1rem; } }
 
