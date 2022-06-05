@@ -8,10 +8,6 @@ header {
     z-index: 3;
 
     .header {
-        @media (min-width:$min-md) and (max-width:$max-md) {
-            justify-content: center;
-        }
-
         &__watermark {
             gap: 1rem;
             @include display-flex-row;

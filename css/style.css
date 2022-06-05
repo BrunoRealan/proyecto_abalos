@@ -25,9 +25,6 @@ header {
   border-bottom: 0.2rem solid #0f1919;
   background: linear-gradient(180deg, #0f2121 0%, #0f3c3c 50%, #0f2121 100%);
   z-index: 3; }
-  @media (min-width: 541px) and (max-width: 720px) {
-    header .header {
-      justify-content: center; } }
   header .header__watermark {
     gap: 1rem;
     display: flex;
