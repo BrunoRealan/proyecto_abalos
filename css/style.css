@@ -508,7 +508,7 @@ footer {
     .somos {
       margin: 0; } }
   .somos__img {
-    width: 45vw;
+    width: 50vw;
     height: auto;
     margin: 1rem 1rem 2rem 1rem;
     box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9); }
@@ -660,7 +660,7 @@ footer {
         flex-direction: column;
         gap: 0.5rem; } }
   .membresia__img {
-    width: 30vw;
+    width: 35vw;
     height: auto;
     margin: 1%;
     box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9); }
