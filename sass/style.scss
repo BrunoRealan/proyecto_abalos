@@ -19,20 +19,12 @@
 }
 
 body {
-    background: $bg-color;
-}
-
-main {
-    grid-area: main;
-    @include columnaCentrada;
-}
-
-.gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header"
         "main main main"
         "footer footer footer";
+    background: $bg-color;
 
     @media (min-width:$min-md) and (max-width:$max-md) {
         grid-template-columns: repeat(2, 1fr);
@@ -47,4 +39,9 @@ main {
             "main"
             "footer";
     }
+}
+
+main {
+    grid-area: main;
+    @include columnaCentrada;
 }
