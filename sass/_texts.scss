@@ -51,13 +51,8 @@
     }
 
     &__description {
-        font-family: $font-principal;
-        font-size: 1.25rem;
         width: 40vw;
-        text-align: center;
-        border-color: $border-color-description;
-        background: $bg-color-description;
-        color: $color-black;
+        @include description;
         @include margin-text-lg;
         @include outline;
 

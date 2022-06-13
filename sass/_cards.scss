@@ -108,26 +108,20 @@
     }
 
     &__description {
-        font-family: $font-principal;
-        font-size: 1.25rem;
-        text-align: center;
-        border-color: $border-color-description;
-        background: $bg-color-description;
-        color: $color-black;
+        @include description;
         @include margin-text-lg;
         @include outline;
 
         @media (min-width:$min-md) and (max-width:$max-md) {
             width: 60vw;
-            font-size: 1rem;
-            padding: 0.25rem;
-            margin: 0.5rem;
+            @include queries-descritpion;
+            @include margin-text-med;
         }
 
         @media (min-width:$min-xs) and (max-width:$max-xs) {
             width: 70vw;
-            font-size: 1rem;
-            margin: 0.5rem;
+            @include queries-descritpion;
+            @include margin-text-med;
         }
     }
 }

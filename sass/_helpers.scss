@@ -13,6 +13,7 @@
         flex-direction: column;
     }
 }
+
 @mixin display-flex-row {
     display: flex;
     flex-direction: row;
@@ -37,6 +38,15 @@
     background-image: $bg-color-title;
     border: $border-color-title;
     text-shadow: $textshadow-title;
+}
+
+@mixin description {
+    font-family: $font-principal;
+    font-size: 1.25rem;
+    text-align: center;
+    border-color: $border-color-description;
+    background: $bg-color-description;
+    color: $color-black;
 }
 
 @mixin margin-text-min {
@@ -102,13 +112,13 @@
 }
 
 @mixin queries-p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 1rem;
     padding: 0.125rem;
 }
 
 @mixin queries-descritpion {
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 85vw;
     height: auto;
 }

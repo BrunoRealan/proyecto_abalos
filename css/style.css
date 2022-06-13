@@ -103,9 +103,7 @@ header {
       font-size: 1.4rem; } }
   @media (min-width: 320px) and (max-width: 540px) {
     .nav-item {
-      font-size: 1.2rem;
-      margin: 0;
-      padding: 0; } }
+      font-size: 1.3rem; } }
 
 .nav-link {
   color: #3c9461;
@@ -293,23 +291,23 @@ footer {
   box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.9); }
   @media (min-width: 721px) and (max-width: 1200px) {
     .div {
-      font-size: 1rem;
+      font-size: 1.1rem;
       width: 85vw;
       height: auto; } }
   @media (min-width: 541px) and (max-width: 720px) {
     .div {
-      font-size: 1rem;
+      font-size: 1.1rem;
       width: 85vw;
       height: auto; } }
   @media (min-width: 320px) and (max-width: 540px) {
     .div {
-      font-size: 1rem;
+      font-size: 1.1rem;
       width: 85vw;
       height: auto; } }
   .div__description {
+    width: 40vw;
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 1.25rem;
-    width: 40vw;
     text-align: center;
     border-color: #0f3a3a;
     background: linear-gradient(135deg, rgba(50, 125, 60, 0.95) 0%, #7dbe7d 50%, rgba(50, 125, 60, 0.95) 100%);
@@ -324,14 +322,14 @@ footer {
         width: 80vw; } }
     @media (min-width: 541px) and (max-width: 720px) {
       .div__description {
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 85vw;
         height: auto;
         margin: 0.5rem;
         padding: 0.5rem; } }
     @media (min-width: 320px) and (max-width: 540px) {
       .div__description {
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 85vw;
         height: auto;
         margin: 0.5rem;
@@ -348,17 +346,17 @@ footer {
   padding: 0.5rem; }
   @media (min-width: 721px) and (max-width: 1200px) {
     .p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       margin: 1rem;
       padding: 0.125rem; } }
   @media (min-width: 541px) and (max-width: 720px) {
     .p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       margin: 1rem;
       padding: 0.125rem; } }
   @media (min-width: 320px) and (max-width: 540px) {
     .p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       margin: 1rem;
       padding: 0.125rem; } }
   .p__title {
@@ -490,14 +488,19 @@ footer {
     @media (min-width: 541px) and (max-width: 720px) {
       .cards__description {
         width: 60vw;
-        font-size: 1rem;
-        padding: 0.25rem;
-        margin: 0.5rem; } }
+        font-size: 1.1rem;
+        width: 85vw;
+        height: auto;
+        margin: 0.5rem;
+        padding: 0.5rem; } }
     @media (min-width: 320px) and (max-width: 540px) {
       .cards__description {
         width: 70vw;
-        font-size: 1rem;
-        margin: 0.5rem; } }
+        font-size: 1.1rem;
+        width: 85vw;
+        height: auto;
+        margin: 0.5rem;
+        padding: 0.5rem; } }
 
 .somos {
   margin: 1rem;
